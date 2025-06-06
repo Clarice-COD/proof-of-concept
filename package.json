@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/fdnd-task/proof-of-concept.git"
   },
-   "keywords": [
+  "keywords": [
     "node",
     "express",
     "ejs"
@@ -26,7 +26,10 @@
   },
   "homepage": "https://github.com/fdnd-task/proof-of-concept#readme",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.21.2",
+    "liquidjs": "^10.21.1",
+    "pg": "^8.16.0"
   }
 }
