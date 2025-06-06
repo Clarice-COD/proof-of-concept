@@ -1,8 +1,57 @@
+{% comment %} {% for qer in qers %}
+    <pre>{{ qer | json }}</pre>
+  {% endfor %} {% endcomment %}
+
 {% render 'views/head.liquid' %}
 {% render 'views/nav.liquid' %}
 
+<section>
+    <h1>De mensen van Q42</h1>
+    <p>Onze mensen noemen we Q'ers. Maar wie zijn dat dan? Die Q'ers die het internet aan het afmaken zijn? Check ze allemaal hieronder. En wil je ook Q'er worden, scroll dan even voorbij onze hoofden voor de openstaande vacatures!</p>
+    <button>filter</button>
+</section>
+
 {% for qer in qers %} 
-    <p>{{ qer.name }}</p>
+<section>
+    <picture>
+        <source type="" srcset="" >
+        <img src="https://fdnd-agency.directus.app/assets/{{ qer.avatars }}" alt="{{ qer.name | default: 'Gebruiker' }}">
+    </picture>
+</section>
 {% endfor %} 
+
+<section>
+    <h2>Ook werken bij Q42?</h2>
+    <p>Hou jij van mooie web-, app-, IoT- of VR-dingen programmeren? En van de eindgebruiker verbazen? Dan willen wij graag met jou praten! Want wij zijn altijd op zoek naar knappe koppen. Check dus snel  <a href="">onze vacatures!</a></p>
+</section>
+
+<section>
+    <img src="/suitcase_icon.png" alt="" width="80">
+    <p>Stage</p>
+    <p>Internship</p>
+    <p>Den Haag en/of Amsterdam</p>
+    <button><img src="/arrowhead_icon.png" alt="" width="40"></button>
+</section>
+
+<section>
+    <h2>Vraag het team</h2>
+    <p>Heb je een vraag voor het team? Bekijk de vragen hieronder of stel zelf je vraag en krijg antwoord van Q’ers</p>
+</section>
+
+<section>
+    <form action="" method="get">
+        <div class="form-example">
+            <label>Onderwerp vraag</label>
+            <input type="text" name="title" required />
+        </div>
+        <div class="form-example">
+            <label>Omschrijving vraag</label>
+            <input type="text" name="title"/>
+        </div>
+        <div class="form-example">
+            <button>posten</button>
+        </div>
+    </form>
+</section>
 
 {% render 'views/foot.liquid' %}
