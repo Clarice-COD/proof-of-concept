@@ -1,3 +1,8 @@
+{% render 'views/head.liquid' %}
+{% render 'views/nav.liquid' %}
+
 {% for qer in qers %} 
     <p>{{ qer.name }}</p>
 {% endfor %} 
+
+{% render 'views/foot.liquid' %}
