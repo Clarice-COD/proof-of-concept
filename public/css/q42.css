@@ -1,0 +1,33 @@
+:root {
+    /* Tekstkleuren */
+  --heading-color: #212121;
+  --primary-text-color: #aaaea2;
+  --secondary-text-color: #fff;
+
+    /* Achtergrondkleuren */
+  --primary-background-color: #212121;
+  --secondary-backgound-color: #41453b;
+
+    /* Highlightkleuren */
+  --color-highlight: #84bc2d;
+
+  /* Typografie */
+  --font-family-heading: 'proxima-nova', sans-serif;
+  --font-family-text: 'ff-tisa-sans-web-pro', sans-serif;
+
+  --heading-size-h1: 2.5rem;
+  --heading-size-h2: 2.125rem;
+  --heading-size-h3: 1.5625 rem;
+
+  --line-height-base: 110%;
+
+    /* Witruimte */
+  --spacing-s: 9px;
+  --spacing-m: 17px;
+  --spacing-l: 35px;
+  --spacing-xl: 96px;
+
+    /* Randen */
+  --border-radius-s: 3px;
+  --border-radius-m: 5px;
+}
