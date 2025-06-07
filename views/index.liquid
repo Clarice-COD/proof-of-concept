@@ -1,6 +1,6 @@
-{% comment %} {% for qer in qers %}
-    <pre>{{ qer | json }}</pre>
-  {% endfor %} {% endcomment %}
+ {% for qer in qers %}
+    <pre>{{ qer.avatars }}</pre>
+  {% endfor %} 
 
 {% render 'views/head.liquid' %}
 {% render 'views/nav.liquid' %}
@@ -13,10 +13,10 @@
 
 {% for qer in qers %} 
 <section>
-    <picture>
-        <source type="" srcset="" >
-        <img src="https://fdnd-agency.directus.app/assets/{{ qer.avatars }}" alt="{{ qer.name | default: 'Gebruiker' }}">
-    </picture>
+        <picture>
+            <source type="" srcset="{{ qer.avatars | first }}" >
+            <img src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="150" format="jpeg">
+        </picture>
 </section>
 {% endfor %} 
 
