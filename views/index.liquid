@@ -8,14 +8,14 @@
 </section>
 
  
-<section class="img-container">
+<div class="img-container">
     {% for qer in qers %}
         <picture>
             <source srcset="{{ qer.avatars | first }}" >
             <img src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="150">
         </picture>
     {% endfor %} 
-</section>
+</div>
 
 {% render 'views/work-offers.liquid' %}
 
@@ -24,7 +24,7 @@
     <p>Heb je een vraag voor het team? Bekijk de vragen hieronder of stel zelf je vraag en krijg antwoord van Q’ers</p>
 </section>
 
-<section class="chat-container">
+<div class="chat-container">
     <form action="" method="get">
         <div class="form-example">
             <label>Onderwerp vraag</label>
@@ -38,6 +38,6 @@
             <button id="post-btn">posten</button>
         </div>
     </form>
-</section>
+</div>
 
 {% render 'views/foot.liquid' %}
