@@ -7,14 +7,15 @@
     <button id="filter-btn">filter</button>
 </section>
 
-{% for qer in qers %} 
+ 
 <section class="img-container">
+    {% for qer in qers %}
         <picture>
             <source type="" srcset="{{ qer.avatars | first }}" >
             <img src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="150" format="jpeg">
         </picture>
+    {% endfor %} 
 </section>
-{% endfor %} 
 
 {% render 'views/work-offers.liquid' %}
 

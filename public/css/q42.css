@@ -31,3 +31,29 @@
   --border-radius-s: 3px;
   --border-radius-m: 5px;
 }
+
+/* MENU */
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.links-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+/* PEOPLE */
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* WORK OFFERS */
+
+.work-offer {
+    display: flex;
+    flex-direction: row;
+}
