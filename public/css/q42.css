@@ -39,8 +39,12 @@ nav {
     flex-direction: row;
 }
 
+.close-menu {
+    display: none;
+}
+
 .links-menu {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
