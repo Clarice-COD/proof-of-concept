@@ -17,7 +17,10 @@
 
   --heading-size-h1: 2.5rem;
   --heading-size-h2: 2.125rem;
-  --heading-size-h3: 1.5625 rem;
+  --heading-size-h3: 1.5625rem;
+  --text-size-s: 1rem;
+
+  --text-align: center;
 
   --line-height-base: 110%;
 
@@ -30,6 +33,40 @@
     /* Randen */
   --border-radius-s: 3px;
   --border-radius-m: 5px;
+}
+
+/* MAIN SETTINGS */
+body {
+    
+}
+
+/* TEXT */
+
+h1, h2, h3 {
+    line-height: var(--line-height-base);
+    text-align: var(--text-align);
+    max-width: 14rem;
+    margin: auto;
+}
+
+h1 {
+    font-size: var(--heading-size-h1);
+}
+
+h2 {
+    font-size: var(--heading-size-h2);
+}
+
+h3 {
+    font-size: var(--heading-size-h3);
+}
+
+p {
+    font-size: var(--text-size-s);
+    line-height: var(--line-height-base);
+    text-align: var(--text-align);
+    max-width: 18rem;
+    margin: auto;
 }
 
 /* MENU */
@@ -70,6 +107,7 @@ nav {
       }
 }
 
+
 /* PEOPLE */
 
 .img-container {
@@ -83,3 +121,34 @@ nav {
     display: flex;
     flex-direction: row;
 }
+
+/* WORK OFFERS */
+
+.work-offers-text {
+    display: flex;
+    flex-direction: column;
+    
+    p {
+        text-align: left;
+        margin-left: 0;
+    }
+}
+
+/* FOOTER */
+
+.select-language-text {
+    max-width: 12rem;
+}
+
+.eidra-container {
+    h2 {
+        text-align: left;
+        margin-left: 0;
+    }
+   
+    p {
+        text-align: left;
+        margin-left: 0;
+    }
+}
+
