@@ -1,6 +1,6 @@
 :root {
     /* Tekstkleuren */
-  --heading-color: #212121;
+  --heading-color: #eeeeee;
   --primary-text-color: #aaaea2;
   --secondary-text-color: #fff;
 
@@ -37,7 +37,7 @@
 
 /* MAIN SETTINGS */
 body {
-    
+    background-color: var(--primary-background-color);
 }
 
 /* TEXT */
@@ -47,6 +47,7 @@ h1, h2, h3 {
     text-align: var(--text-align);
     max-width: 14rem;
     margin: auto;
+    color: var(--heading-color);
 }
 
 h1 {
@@ -67,6 +68,15 @@ p {
     text-align: var(--text-align);
     max-width: 18rem;
     margin: auto;
+    color: var(--primary-text-color);
+}
+
+label {
+    color: var(--secondary-text-color);
+}
+
+summary {
+    color: var(--secondary-text-color);
 }
 
 /* MENU */
@@ -136,19 +146,25 @@ nav {
 
 /* FOOTER */
 
+footer {
+    background-color: var(--secondary-backgound-color);
+}
+
 .select-language-text {
+    color: var(--secondary-text-color);
     max-width: 12rem;
+
+    a {
+        color: var(--color-highlight);
+    }
 }
 
 .eidra-container {
-    h2 {
+    background-color: #000;
+    h2, p {
         text-align: left;
         margin-left: 0;
-    }
-   
-    p {
-        text-align: left;
-        margin-left: 0;
+        color: #fff;
     }
 }
 
