@@ -33,6 +33,10 @@
     /* Randen */
   --border-radius-s: 3px;
   --border-radius-m: 5px;
+
+  /* Button */
+  --padding-btn: 0.6rem 1.6rem 0.6rem 1.6rem;
+  --border-btn: none;
 }
 
 /* MAIN SETTINGS */
@@ -80,11 +84,27 @@ summary {
     color: var(--secondary-text-color);
 }
 
+/* Buttons */
+
+.main-btn {
+    padding: var(--padding-btn);
+    border-radius: var(--border-radius-m);
+    background-color: var(--color-highlight);
+    border: var(--border-btn);
+}
+
 /* MENU */
 
 nav {
     display: flex;
     flex-direction: row;
+}
+
+.open-menu, .scroll-down-btn {
+    background: none;
+    border:none;
+    color: var(--color-highlight);
+
 }
 
 .open-menu {
