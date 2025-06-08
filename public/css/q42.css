@@ -39,6 +39,14 @@ nav {
     flex-direction: row;
 }
 
+.open-menu {
+    display: block;
+
+    @media (min-width: 770px) {
+        display: none;
+      }
+}
+
 .close-menu {
     display: none;
 }
@@ -46,6 +54,20 @@ nav {
 .links-menu {
     display: none;
     flex-direction: column;
+
+    @media (min-width: 770px) {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+      }
+}
+
+.scroll-down-btn {
+    display: block;
+
+    @media (min-width: 770px) {
+        display: none;
+      }
 }
 
 /* PEOPLE */
