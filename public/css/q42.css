@@ -38,6 +38,7 @@
 /* MAIN SETTINGS */
 body {
     background-color: var(--primary-background-color);
+    margin: 0;
 }
 
 /* TEXT */
@@ -123,6 +124,7 @@ nav {
 .img-container {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
 /* WORK OFFERS */
