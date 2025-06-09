@@ -182,6 +182,8 @@ nav {
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    gap: var(--gap-m);
+    padding-bottom: var(--spacing-xl);
 }
 
 /* WORK OFFERS */
