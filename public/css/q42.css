@@ -30,6 +30,9 @@
   --spacing-l: 35px;
   --spacing-xl: 96px;
 
+  --gap-s: 0.5rem;
+  --gap-m: 1rem;
+
     /* Randen */
   --border-radius-s: 3px;
   --border-radius-m: 5px;
@@ -107,6 +110,9 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: var(--gap-m);
+    padding-top: var(--spacing-l);
+    padding-bottom: var(--spacing-l);
 }
 
 .open-menu, .scroll-down-btn {
