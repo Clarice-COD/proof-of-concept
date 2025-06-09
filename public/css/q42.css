@@ -98,6 +98,7 @@ summary {
 nav {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .open-menu, .scroll-down-btn {
@@ -128,6 +129,10 @@ nav {
         flex-direction: row;
         gap: 2rem;
       }
+}
+
+.show-menu {
+    display: flex;
 }
 
 .scroll-down-btn {

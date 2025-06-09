@@ -19,3 +19,18 @@
     </ul>
     <button class="scroll-down-btn">CONTACT</button>
 </nav>
+
+<script>
+    let openMenuBtn = document.querySelector('.open-menu')
+    console.log(openMenuBtn)
+
+    openMenuBtn.addEventListener('click', openMenu)
+
+    function openMenu() {
+        // Toon nenu
+        let sideBar = document.querySelectorAll('.links-menu')
+        sideBar.forEach(sideBar => {
+            sideBar.classList.add('show-menu')
+        })
+    }
+</script>
