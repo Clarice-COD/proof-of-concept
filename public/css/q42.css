@@ -21,6 +21,7 @@
   --text-size-s: 1rem;
 
   --text-align: center;
+  --text-spacing: 135%;
 
   --line-height-base: 110%;
 
@@ -77,6 +78,7 @@ p {
     max-width: 18rem;
     margin: auto;
     color: var(--primary-text-color);
+    line-height: var(--text-spacing);
 }
 
 label {
@@ -102,6 +104,8 @@ ul {
     border-radius: var(--border-radius-m);
     background-color: var(--color-highlight);
     border: var(--border-btn);
+    display: block;
+    align-self: center;
 }
 
 /* MENU */
@@ -112,7 +116,7 @@ nav {
     justify-content: center;
     gap: var(--gap-m);
     padding-top: var(--spacing-l);
-    padding-bottom: var(--spacing-l);
+    padding-bottom: var(--spacing-xl);
 }
 
 .open-menu, .scroll-down-btn {
@@ -159,6 +163,16 @@ nav {
     @media (min-width: 770px) {
         display: none;
       }
+}
+
+/* INTRO */
+
+.intro-text-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-m);
+    padding-bottom: var(--spacing-xl);
 }
 
 
