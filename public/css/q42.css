@@ -84,6 +84,14 @@ summary {
     color: var(--secondary-text-color);
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 /* Buttons */
 
 .main-btn {
@@ -168,6 +176,7 @@ nav {
 .work-offers-text {
     display: flex;
     flex-direction: column;
+    color: var(--secondary-text-color);
     
     p {
         text-align: left;
