@@ -26,6 +26,7 @@
   --line-height-base: 110%;
 
     /* Witruimte */
+  --spacing-xs: 4px;
   --spacing-s: 9px;
   --spacing-m: 17px;
   --spacing-l: 35px;
@@ -36,7 +37,7 @@
 
     /* Randen */
   --border-radius-s: 3px;
-  --border-radius-m: 5px;
+  --border-radius-m: 10px;
 
   /* Button */
   --padding-btn: 0.6rem 1.6rem 0.6rem 1.6rem;
@@ -188,9 +189,19 @@ nav {
 
 /* WORK OFFERS */
 
+.work-offers-container {
+    padding-bottom: var(--spacing-xl);
+}
+
 .work-offer {
     display: flex;
     flex-direction: row;
+    border-top: solid var(--secondary-backgound-color);
+    border-bottom: solid var(--secondary-backgound-color);
+    padding: var(--spacing-s);
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 /* WORK OFFERS */
@@ -204,6 +215,18 @@ nav {
         text-align: left;
         margin-left: 0;
     }
+}
+
+#suitcase-icon {
+    background-color: var(--color-highlight);
+    padding: var(--spacing-s);
+    border-radius: var(--border-radius-m);
+}
+
+#arrow-icon {
+    background-color: var(--color-highlight);
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-m);
 }
 
 /* FOOTER */
