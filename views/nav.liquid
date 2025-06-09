@@ -21,20 +21,46 @@
 </nav>
 
 <script>
+    // Selecteer menu button
     let openMenuBtn = document.querySelector('.open-menu')
     console.log(openMenuBtn)
 
+    // Click event voor de menu button
     openMenuBtn.addEventListener('click', openMenu)
 
+    // Voeg een functie toe aan de menu button
     function openMenu() {
-        // Toon menu
+
+        // Toon de sidebar
         let sideBar = document.querySelectorAll('.links-menu')
         sideBar.forEach(sideBar => {
             sideBar.classList.add('show-menu')
         })
 
-        //  Toon close menu btn
+        // Toon de sluit menu button
         let closeMenu = document.querySelector('.close-menu')
         closeMenu.classList.add('show-close-menu')
     }
+
+    // Selecteer close button
+    let closeMenuBtn = document.querySelector('.close-menu');
+    console.log(closeMenuBtn);
+
+    // Click event voor de close button
+    closeMenuBtn.addEventListener('click', closeMenu);
+
+    // Voeg een functie toe aan de close menu button
+    function closeMenu() {
+        // Selecteer alle .links-menu elementen
+        let sluitSideBar = document.querySelectorAll('.links-menu');
+
+        // Verwijder de show-menu class van elk element
+        sluitSideBar.forEach(sideBar => {
+            sideBar.classList.remove('show-menu');
+        });
+    }
+
+
+
+
 </script>
