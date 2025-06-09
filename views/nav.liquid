@@ -27,10 +27,14 @@
     openMenuBtn.addEventListener('click', openMenu)
 
     function openMenu() {
-        // Toon nenu
+        // Toon menu
         let sideBar = document.querySelectorAll('.links-menu')
         sideBar.forEach(sideBar => {
             sideBar.classList.add('show-menu')
         })
+
+        //  Toon close menu btn
+        let closeMenu = document.querySelector('.close-menu')
+        closeMenu.classList.add('show-close-menu')
     }
 </script>

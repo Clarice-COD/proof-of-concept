@@ -120,6 +120,10 @@ nav {
     display: none;
 }
 
+.show-close-menu {
+    display: block;
+}
+
 .links-menu {
     display: none;
     flex-direction: column;
