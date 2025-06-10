@@ -125,6 +125,10 @@ li {
 
 /* Buttons */
 
+button, a {
+    cursor: pointer;
+}
+
 .main-btn {
     padding: var(--padding-btn);
     border-radius: var(--border-radius-m);
@@ -179,6 +183,9 @@ nav {
       }
 }
 
+a {
+    color: var(--color-highlight);
+}
 .show-menu {
     display: flex;
 }
