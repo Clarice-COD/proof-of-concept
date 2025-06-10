@@ -12,7 +12,7 @@
     {% for qer in qers %}
         <picture>
             <source srcset="{{ qer.avatars | first }}" >
-            <img src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="150">
+            <img class="mensen-img" src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="150">
         </picture>
     {% endfor %} 
 </div>

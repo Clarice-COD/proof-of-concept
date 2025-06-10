@@ -212,6 +212,14 @@ nav {
     padding-bottom: var(--spacing-xl);
 }
 
+.mensen-img {
+    width: 12rem;
+
+    @media (min-width: 770px) {
+        width: 16rem;
+      }
+}
+
 /* WORK OFFERS */
 
 .work-offers-container {
