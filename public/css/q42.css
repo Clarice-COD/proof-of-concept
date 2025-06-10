@@ -214,7 +214,9 @@ a {
 .img-container {
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    overflow: auto;
+    width: 100vw;
+    justify-content: flex-start;
     gap: var(--gap-m);
     padding-bottom: var(--spacing-xl);
 }
