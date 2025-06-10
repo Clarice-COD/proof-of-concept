@@ -43,6 +43,13 @@
   /* Button */
   --padding-btn: 0.6rem 1.6rem 0.6rem 1.6rem;
   --border-btn: none;
+
+  @media (min-width: 770px) {
+    --heading-size-h1: 3.8rem;
+    --heading-size-h2: 2.6rem;
+    --heading-size-h3: 2rem;
+    --text-size-s: 1.2rem;
+  }
 }
 
 /* MAIN SETTINGS */
@@ -57,6 +64,10 @@ h1, h2, h3 {
     line-height: var(--line-height-base);
     max-width: 14rem;
     color: var(--heading-color);
+
+    @media (min-width: 770px) {
+        max-width: 18rem;
+      }
 }
 
 h1 {
@@ -85,6 +96,10 @@ p {
     margin: auto;
     color: var(--primary-text-color);
     line-height: var(--text-spacing);
+
+    @media (min-width: 770px) {
+        max-width: 26rem;
+      }
 }
 
 label {
@@ -93,6 +108,7 @@ label {
 
 summary {
     color: var(--secondary-text-color);
+    font-size: var(--text-size-s);
 }
 
 a {
