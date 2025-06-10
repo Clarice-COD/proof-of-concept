@@ -257,6 +257,7 @@ footer {
 
 .eidra-container {
     background-color: #000;
+    padding: var(--spacing-l);
     h2, p {
         text-align: left;
         margin-left: 0;
