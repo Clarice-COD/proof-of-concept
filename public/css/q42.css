@@ -54,22 +54,26 @@ body {
 
 h1, h2, h3 {
     line-height: var(--line-height-base);
-    text-align: var(--text-align);
     max-width: 14rem;
-    margin: auto;
     color: var(--heading-color);
 }
 
 h1 {
     font-size: var(--heading-size-h1);
+    text-align: var(--text-align);
+    margin: auto;
 }
 
 h2 {
     font-size: var(--heading-size-h2);
+    text-align: var(--text-align);
+    margin: auto;
 }
 
 h3 {
     font-size: var(--heading-size-h3);
+    margin: 0;
+
 }
 
 p {
@@ -204,8 +208,6 @@ nav {
     margin-left: 1rem;
 }
 
-/* WORK OFFERS */
-
 .work-offers-text {
     display: flex;
     flex-direction: column;
@@ -227,6 +229,37 @@ nav {
     background-color: var(--color-highlight);
     padding: var(--spacing-xs);
     border-radius: var(--border-radius-m);
+}
+
+/* CHAT */
+form {
+    justify-content: center;
+    justify-self: center;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-backgound-color);
+    padding: var(--spacing-m);
+    margin-bottom: var(--spacing-xl);
+    gap: var(--gap-m);
+}
+
+input {
+    border-radius: var(--border-radius-s);
+    border: none;
+    background-color: var(--primary-background-color);
+}
+
+#onderwerp-input {
+    height: 1.5rem;
+   }
+
+#omschrijving-input {
+ height: 4rem;
+}
+
+.posten-btn {
+    align-self: baseline;
 }
 
 /* FOOTER */
