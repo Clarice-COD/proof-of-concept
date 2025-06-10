@@ -102,6 +102,10 @@ ul {
     list-style: none;
 }
 
+li {
+    max-width: 7rem;
+}
+
 /* Buttons */
 
 .main-btn {
@@ -200,29 +204,44 @@ nav {
 .work-offer {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     border-top: solid var(--secondary-backgound-color);
     border-bottom: solid var(--secondary-backgound-color);
     padding: var(--spacing-s);
     align-items: center;
     margin-right: 1rem;
     margin-left: 1rem;
+    gap: var(--gap-m);
+
+    @media (min-width: 770px) {
+        padding: var(--spacing-l);
+      }
 }
 
 .work-offers-text {
     display: flex;
     flex-direction: column;
     color: var(--secondary-text-color);
-    
-    p {
-        text-align: left;
-        margin-left: 0;
-    }
+    margin-left: -2rem;
+    text-align: left;
+
+    @media (min-width: 770px) {
+        display: flex;
+        flex-direction: row;
+        gap: 6rem;
+      }
 }
 
 #suitcase-icon {
     background-color: var(--color-highlight);
     padding: var(--spacing-s);
     border-radius: var(--border-radius-m);
+
+    @media (min-width: 770px) {
+        width: 5rem;
+        height: 5rem;
+        padding: var(--spacing-s) var(--spacing-l) var(--spacing-s) var(--spacing-l);
+      }
 }
 
 #arrow-icon {
