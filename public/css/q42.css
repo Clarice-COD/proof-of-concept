@@ -307,6 +307,10 @@ form {
     width: 75vw;
     padding: var(--spacing-m);
     border-radius: var(--border-radius-s);
+
+    @media (min-width: 705px) {
+        width: 50vw;
+      }
 }
 
 .text-field {
@@ -339,18 +343,35 @@ textarea {
 .shared-question {
     display: flex;
     flex-direction: row;
+    position: relative;
     background-color: var(--secondary-backgound-color);
     width: 75vw;
     padding: var(--spacing-s) var(--spacing-m) var(--spacing-s) var(--spacing-m);
     gap: var(--gap-m);
     border-radius: var(--border-radius-s);
     align-items: center;
+
+    @media (min-width: 705px) {
+        width: 50vw;
+      }
+
+    @media (min-width: 1025px) {
+    width: 40vw;
+    }
 }
 
 .user-icon {
     background-color: var(--primary-background-color);
     padding: var(--spacing-xs);
     border-radius: var(--border-radius-s);
+}
+
+.user-icon-img {
+    width: 2.5rem;
+
+    @media (min-width: 705px) {
+        width: 3.5rem;
+      }
 }
 
 .question-text {
@@ -360,6 +381,18 @@ textarea {
 
 time {
     display: none;
+
+    @media (min-width: 705px) {
+        display: block;
+        align-self: baseline;
+        background-color: var(--primary-background-color);
+        color: var(--color-highlight);
+        padding: var(--spacing-xs);
+        border-radius: var(--border-radius-s);
+        display: block;
+        position: absolute;
+        right: 1rem;
+    }
 }
 
 
