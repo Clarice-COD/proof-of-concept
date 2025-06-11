@@ -294,6 +294,36 @@ details {
     border-radius: var(--border-radius-m);
 }
 
+/* CHAT FUNCTIE */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: var(--gap-m);
+    background-color: var(--secondary-backgound-color);
+    width: 75vw;
+    padding: var(--spacing-m);
+}
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-s);
+}
+
+textarea {
+    width: 98%;
+    border-radius: var(--border-radius-s);
+    background-color: var(--primary-background-color);
+    border: solid var(--color-highlight);
+    color: var(--color-highlight);
+}
+
+.verzend-btn {
+    align-self: flex-start;
+}
+
 /* FOOTER */
 
 footer {
@@ -339,4 +369,3 @@ footer {
         color: #fff;
     }
 }
-
