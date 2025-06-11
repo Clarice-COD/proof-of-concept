@@ -34,9 +34,18 @@
     <button type="submit">verzend</button>
 </form>
 
-
-{% for chat in chat %}
-    <p>{{ chat.text }}</p>
-{% endfor %}  
+{% comment %} CHATS POSTED {% endcomment %}
+<div>
+    {% for chat in chat %}
+        <div>
+            <picture>
+                <source srcset="/assets/user-question-icon.svg">
+                <img src="/assets/user-question-icon.svg" width="60">
+            </picture>
+            <p>{{ chat.text }}</p>
+            <time datetime="11/06/2025">11 juni</time>
+        </div>
+    {% endfor %}  
+</div>
 
 {% render 'views/foot.liquid' %}
