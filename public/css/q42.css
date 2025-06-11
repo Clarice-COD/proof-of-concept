@@ -37,7 +37,7 @@
   --gap-l: 4rem;
 
     /* Randen */
-  --border-radius-s: 3px;
+  --border-radius-s: 6px;
   --border-radius-m: 10px;
 
   /* Button */
@@ -296,6 +296,8 @@ details {
 
 /* CHAT FUNCTIE */
 
+/* vragen formulier */
+
 form {
     display: flex;
     flex-direction: column;
@@ -304,6 +306,7 @@ form {
     background-color: var(--secondary-backgound-color);
     width: 75vw;
     padding: var(--spacing-m);
+    border-radius: var(--border-radius-s);
 }
 
 .text-field {
@@ -323,6 +326,10 @@ textarea {
 .verzend-btn {
     align-self: flex-start;
 }
+
+/* gedeelde vragen */
+
+
 
 /* FOOTER */
 
@@ -368,4 +375,39 @@ footer {
         margin-left: 0;
         color: #fff;
     }
+}
+
+
+.shared-questions-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: var(--gap-m);
+    padding: var(--spacing-l);
+}
+
+.shared-question {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-backgound-color);
+    width: 75vw;
+    padding: var(--spacing-s) var(--spacing-m) var(--spacing-s) var(--spacing-m);
+    gap: var(--gap-m);
+    border-radius: var(--border-radius-s);
+    align-items: center;
+}
+
+.user-icon {
+    background-color: var(--primary-background-color);
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-s);
+}
+
+.question-text {
+    display: contents;
+    text-align: left;
+}
+
+time {
+    display: none;
 }
