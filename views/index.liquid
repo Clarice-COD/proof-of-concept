@@ -25,24 +25,24 @@
 </section>
 
 {% comment %} CHAT FORMULIER {% endcomment %}
-<form method="post">
+<form class="share-questions-form" method="post">
     <h3>Heb je een vraag?</h3>
     <div>
         <label>type hier je vraag</label>
         <textarea name="message" rows="5" cols="35"></textarea>
     </div>
-    <button type="submit">verzend</button>
+    <button class="verzend-btn" type="submit">verzend</button>
 </form>
 
 {% comment %} CHATS POSTED {% endcomment %}
-<div>
+<div class="shared-questions-container">
     {% for chat in chat %}
-        <div>
-            <picture>
+        <div class="shared-question">
+            <picture class="user-icon">
                 <source srcset="/assets/user-question-icon.svg">
                 <img src="/assets/user-question-icon.svg" width="60">
             </picture>
-            <p>{{ chat.text }}</p>
+            <p class="question-text" >{{ chat.text }}</p>
             <time datetime="11/06/2025">11 juni</time>
         </div>
     {% endfor %}  
