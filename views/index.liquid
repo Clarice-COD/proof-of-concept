@@ -24,6 +24,17 @@
     <p>Heb je een vraag voor het team? Bekijk de vragen hieronder of stel zelf je vraag en krijg antwoord van Q’ers</p>
 </section>
 
+{% comment %} CHAT FORMULIER {% endcomment %}
+<form method="post">
+    <h3>Heb je een vraag?</h3>
+    <div>
+        <label>type hier je vraag</label>
+        <textarea name="message" rows="5" cols="35"></textarea>
+    </div>
+    <button type="submit">verzend</button>
+</form>
+
+
 {% for chat in chat %}
     <p>{{ chat.text }}</p>
 {% endfor %}  
