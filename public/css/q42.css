@@ -294,41 +294,6 @@ details {
     border-radius: var(--border-radius-m);
 }
 
-/* CHAT */
-form {
-    justify-content: center;
-    justify-self: center;
-    width: 75vw;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--secondary-backgound-color);
-    padding: var(--spacing-m);
-    margin-bottom: var(--spacing-xl);
-    gap: var(--gap-m);
-
-    @media (min-width: 770px) {
-        width: 50vw;
-      }
-}
-
-input {
-    border-radius: var(--border-radius-s);
-    border: none;
-    background-color: var(--primary-background-color);
-}
-
-#onderwerp-input {
-    height: 1.5rem;
-   }
-
-#omschrijving-input {
- height: 4rem;
-}
-
-.posten-btn {
-    align-self: baseline;
-}
-
 /* FOOTER */
 
 footer {
