@@ -12,22 +12,28 @@ app.use(express.urlencoded({extended: true}))
 const engine = new Liquid()
 app.engine('liquid', engine.express()); 
 app.set('views', './views')
+app.set('view engine', 'liquid');
 
 app.get('/', async (req, res) => { // HTTP GET-verzoek
 
+    // Link naar data voor de mensen details
     const qersResponse = await fetch ('https://the-sprint-api.onrender.com/people', {
         headers: {
             'X-API-Key':`${process.env.API_KEY}`
         }
     });
 
+    // Link naar data voor de chatfunctie
+    const chatsResponse = await fetch ('https://fdnd.directus.app/items/messages/')
+    const chatResponseJSON = await chatsResponse.json();
+    console.log('Volledige API-response:', chatResponseJSON);
+
     const data = await qersResponse.json();
-    console.log(data)
-    res.render('index.liquid', { qers:data}); 
+    res.render('index.liquid', { qers:data,  chat:chatResponseJSON.data}); 
 });
+
 
 app.set('port', process.env.PORT || 8000)
 app.listen(app.get('port'), function () {
   console.log(`Application started on http://localhost:${app.get('port')}`)
 })
- 

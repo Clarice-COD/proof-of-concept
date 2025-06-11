@@ -24,4 +24,8 @@
     <p>Heb je een vraag voor het team? Bekijk de vragen hieronder of stel zelf je vraag en krijg antwoord van Q’ers</p>
 </section>
 
+{% for chat in chat %}
+    <p>{{ chat.text }}</p>
+{% endfor %}  
+
 {% render 'views/foot.liquid' %}
