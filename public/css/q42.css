@@ -461,3 +461,24 @@ time {
         max-width: 18rem;
       }
 }
+
+/* LOADING STATE */
+
+.loader {
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    overflow:hidden;
+    font-size: 0;
+    animation: loader 1.25s infinite;
+    border-radius: var(--border-radius-s);
+}
+
+@keyframes loader {
+        0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 180deg;
+    }
+}

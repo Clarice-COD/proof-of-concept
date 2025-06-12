@@ -48,6 +48,8 @@
     // Overschrijft de default Loading state van de browser...
     event.preventDefault()
 
+    // loading state
+
     // Verzamel alle formuliervelden van het formulier
     let formData = new FormData(form)
 
@@ -76,6 +78,7 @@
 
 
     const newForm = responseDOM.querySelector('[data-miniload="true"]');
+    // success state
     form.outerHTML = newForm.outerHTML;
   
 
