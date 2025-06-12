@@ -3,14 +3,14 @@
     <h3>Heb je een vraag?</h3>
     <div class="text-field">
         <label>typ hier je vraag</label>
-        <textarea type="text" name="text" rows="5" cols="28"></textarea>
+        <textarea name="text" rows="5" cols="28"></textarea>
     </div>
     <button class="main-btn verzend-btn" type="submit">verzend</button>
 </form>
 
 {% comment %} SHARED CHATS {% endcomment %}
 {% if chats %}  {% comment %} ideal state {% endcomment %}
-    <div class="shared-questions-container">
+    <div id="text-miniload" class="shared-questions-container">
         {% for chat in chats %}
             <div class="shared-question">
                 <picture class="user-icon">
@@ -23,7 +23,7 @@
         {% endfor %}  
     </div>
 {% else %} {% comment %} empty state {% endcomment %}
-    <div class="nothing-found-container">
+    <div id="text-miniload" class="nothing-found-container">
         <picture class="nothing-found-icon">
             <source srcset="/assets/chat-icon.svg">
             <img src="/assets/chat-icon.svg" width="40">
@@ -39,7 +39,6 @@
 
     // Selecteerd specifiek een form voor de submit via eventlisener
     const form = event.target
-
 
     // Voeg toe als attribute: form-enhanced true aan de form die je enhanced wilt hebben
     if (!form.hasAttribute('data-miniload')) {
@@ -68,23 +67,26 @@
     // De server redirect op de normale manier, en geeft HTML terug
     // (De server weet niet eens dat deze fetch via client-side JavaScript gebeurde)
     const responseText = await response.text()
+    console.log('Response HTML:', responseText)
 
     // Normaal zou de browser die HTML parsen en weergeven, maar daar moeten we nu zelf iets mee
     // Parse de nieuwe HTML en maak hiervan een nieuw Document Object Model in het geheugen
     const parser = new DOMParser()
     const responseDOM = parser.parseFromString(responseText, 'text/html')
 
-    // Zoek in die nieuwe HTML DOM onze nieuwe UI state op, die we via Liquid hebben klaargemaakt
-    // We gebruiken hiervoor het eerdere data-enhanced attribuut, zodat we weten waar we naar moeten zoeken
-    // In de nieuwe HTML zoeken we bijvoorbeeld naar data-enhanced="true" of data-enhanced="formulier-3"
-    // (Hierdoor kunnen we ook meerdere formulieren op dezelfde pagina gebruiken)
-    const newState = responseDOM.querySelector('[data-miniload="' + form.getAttribute('data-enhanced') + '"]')
 
-    // Overschrijf ons formulier met de nieuwe HTML
-    // Hier wil je waarschijnlijk de Loading state vervangen door een Success state
-    form.outerHTML = newState.outerHTML
+    const newForm = responseDOM.querySelector('[data-miniload="true"]');
+    form.outerHTML = newForm.outerHTML;
+  
 
-  })
+  const newChats = responseDOM.querySelector('#text-miniload');
+  const currentChats = document.querySelector('#text-miniload');
+    currentChats.outerHTML = newChats.outerHTML;
+  
+
+  const updatedForm = document.querySelector('[data-miniload="true"]');
+  if (updatedForm) updatedForm.reset();
+});
 
 </script>
 
