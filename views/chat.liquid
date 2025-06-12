@@ -1,0 +1,32 @@
+{% comment %} {% if chat %}
+                {% for chat in chat %}
+                  <p>{{ chat.text }}</p>
+                {% endfor %}
+              {% else %}
+                <p>Geen berichten gevonden.</p>
+              {% endif %} {% endcomment %}
+
+{% comment %} CHAT FORMULIER {% endcomment %}
+<form class="share-questions-form" action="/chat" method="post">
+    <h3>Heb je een vraag?</h3>
+    <div class="text-field">
+        <label>typ hier je vraag</label>
+        <textarea name="message" rows="5" cols="28"></textarea>
+    </div>
+    <button class="main-btn verzend-btn" type="submit">verzend</button>
+</form>
+
+
+{% comment %} CHATS POSTED {% endcomment %}
+<div class="shared-questions-container">
+    {% for chat in chats %}
+        <div class="shared-question">
+            <picture class="user-icon">
+                <source srcset="/assets/user-question-icon.svg">
+                <img class="user-icon-img" src="/assets/user-question-icon.svg" width="40">
+            </picture>
+            <p class="question-text" >{{ chat.text }}</p>
+            <time datetime="11/06/2025">11 juni</time>
+        </div>
+    {% endfor %}  
+</div>
