@@ -1,5 +1,5 @@
 {% comment %} CHAT FORMULIER {% endcomment %}
-<form class="share-questions-form" action="/" method="post">
+<form class="share-questions-form" action="/" method="post" data-miniload="true">
     <h3>Heb je een vraag?</h3>
     <div class="text-field">
         <label>typ hier je vraag</label>
@@ -33,31 +33,26 @@
 {% endif %}
 
 <script type="module">
+    
+    // EventListener voor een formulier die wordt gesubmit 
+    document.addEventListener('submit', async function(event) {
 
-  // Als er ergens op de pagina een formulier wordt gesubmit..
-  // (We maken hier gebruik van Event Delegation)
-  document.addEventListener('submit', async function(event) {
-
-    // Hou in een variabele bij welk formulier dat was
+    // Selecteerd specifiek een form voor de submit via eventlisener
     const form = event.target
 
-    // Als dit formulier geen data-enhanced attribuut heeft, doe dan niks speciaals (laat het formulier normaal versturen)
-    // Dit doen we, zodat we sommige formulieren op de pagina kunnen 'enhancen'
-    // Door ze bijvoorbeeld data-enhanced="true" of data-enhanced="formulier-3" te geven.
-    // Data attributen mag je zelf verzinnen: https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_HTML_problems/Use_data_attributes
-    if (!form.hasAttribute('data-enhanced')) {
+
+    // Voeg toe als attribute: form-enhanced true aan de form die je enhanced wilt hebben
+    if (!form.hasAttribute('data-miniload')) {
       return
     }
 
-    // Voorkom de standaard submit van de browser
-    // Let op: hiermee overschrijven we de default Loading state van de browser...
+    // Overschrijft de default Loading state van de browser...
     event.preventDefault()
 
     // Verzamel alle formuliervelden van het formulier
     let formData = new FormData(form)
 
-    // En voeg eventueel de name en value van de submit button toe aan die data
-    // https://developer.mozilla.org/en-US/docs/Web/API/SubmitEvent/submitter
+    // Voeg name en value toe aan de submit button indien meerdere submit buttons
     if (event.submitter) {
       formData.append(event.submitter.name, event.submitter.value)
     }
@@ -83,7 +78,7 @@
     // We gebruiken hiervoor het eerdere data-enhanced attribuut, zodat we weten waar we naar moeten zoeken
     // In de nieuwe HTML zoeken we bijvoorbeeld naar data-enhanced="true" of data-enhanced="formulier-3"
     // (Hierdoor kunnen we ook meerdere formulieren op dezelfde pagina gebruiken)
-    const newState = responseDOM.querySelector('[data-enhanced="' + form.getAttribute('data-enhanced') + '"]')
+    const newState = responseDOM.querySelector('[data-miniload="' + form.getAttribute('data-enhanced') + '"]')
 
     // Overschrijf ons formulier met de nieuwe HTML
     // Hier wil je waarschijnlijk de Loading state vervangen door een Success state
