@@ -437,3 +437,23 @@ time {
         color: #fff;
     }
 }
+
+/* EMPTY STATE */
+
+.nothing-found-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--spacing-l);
+    padding-bottom: var(--spacing-xl);
+}
+
+.nothing-found-icon {
+    display: block;
+    align-self: center;
+}
+
+.nothing-found-text {
+    text-align: center;
+    color: var(--primary-text-color);
+    max-width: 16rem;
+}
