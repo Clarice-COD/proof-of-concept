@@ -456,4 +456,8 @@ time {
     text-align: center;
     color: var(--primary-text-color);
     max-width: 16rem;
+
+    @media (min-width: 770px) {
+        max-width: 18rem;
+      }
 }
