@@ -33,15 +33,6 @@ app.get('/', async (req, res) => {
         res.render('index.liquid', { qers: data, chats: json.data });
 });
 
-// app.get('/chat', async (req, res) => {
-// console.log('📥 Route /chat is aangeroepen');
-
-//       const response = await fetch('https://fdnd.directus.app/items/messages/');
-//       const json = await response.json();
-//       console.log('🔎 Chat response JSON:', JSON.stringify(json, null, 2));
-//       res.render('chat.liquid', { chat: json.data || [] });
-//   });
-
 app.set('port', process.env.PORT || 8000)
 app.listen(app.get('port'), function () {
   console.log(`Application started on http://localhost:${app.get('port')}`)
