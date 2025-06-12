@@ -40,7 +40,7 @@ app.get('/', async (req, res) => {
       method: 'POST',
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({
-        text: "req.body.text",
+        text: req.body.text,
         for: "Q42",
         from: "148"
       })
