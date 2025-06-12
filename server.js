@@ -33,6 +33,22 @@ app.get('/', async (req, res) => {
         res.render('index.liquid', { qers: data, chats: json.data });
 });
 
+  // Post in chat
+  app.post ('/', async function (req, res){
+  
+    const postChat = await fetch ('https://fdnd.directus.app/items/messages/', {
+      method: 'POST',
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({
+        text: "req.body.text",
+        for: "Q42",
+        from: "148"
+      })
+    })
+  
+    res.redirect(303, '/')
+  })
+
 app.set('port', process.env.PORT || 8000)
 app.listen(app.get('port'), function () {
   console.log(`Application started on http://localhost:${app.get('port')}`)
