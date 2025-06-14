@@ -5,7 +5,7 @@
         <label>typ hier je vraag</label>
         <textarea name="text" rows="5" cols="28"></textarea>
     </div>
-    <button id="submit.btn" class="main-btn verzend-btn" type="submit">verzend</button>
+    <button id="submitBtn" class="main-btn verzend-btn" type="submit">verzend</button>
 </form>
 
 {% comment %} SHARED CHATS {% endcomment %}
@@ -48,7 +48,7 @@
     // Overschrijft de default Loading state van de browser...
     event.preventDefault()
 
-    document.getElementById('submit.btn').classList.add('loader');
+    document.getElementById('submitBtn').classList.add('loader');
 
     // Verzamel alle formuliervelden van het formulier
     let formData = new FormData(form)
@@ -78,9 +78,19 @@
 
 
     const newForm = responseDOM.querySelector('[data-miniload="true"]');
-    // success state
+
     form.outerHTML = newForm.outerHTML;
   
+    // success state
+    const btn = document.getElementById("submitBtn");
+    const textVerstuur = btn.textContent;
+
+    btn.classList.remove("loader")
+    btn.textContent = "✔ Gelukt";
+
+    setTimeout(() => {
+        btn.textContent = textVerstuur;
+    }, 3000);
 
   const newChats = responseDOM.querySelector('#text-miniload');
   const currentChats = document.querySelector('#text-miniload');
