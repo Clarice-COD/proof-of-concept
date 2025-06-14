@@ -194,6 +194,23 @@ a {
       }
 }
 
+/* NAV NAAR CHAT */
+
+.link-to-chat{
+    z-index: 1;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--primary-background-color);
+    border: 3px solid #84bc2d;
+    border-radius: var(--border-radius-s);
+}
+
+.link-chat-img {
+    display: block;
+    padding: var(--spacing-s);
+}
+
 /* INTRO */
 
 .intro-text-container, .werken-text-container, .vragen-text-container {
