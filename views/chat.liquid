@@ -12,10 +12,7 @@
     <ul id="text-miniload" class="shared-questions-container">
         {% for chat in chats %}
             <li class="shared-question">
-                <picture class="user-icon">
-                    <source srcset="/assets/user-question-icon.svg">
-                    <img class="user-icon-img" alt="klantprofiel" src="/assets/user-question-icon.svg" width="40">
-                </picture>
+                <img class="user-icon" alt="klantprofiel" src="/assets/user-question-icon.svg" width="40">
                 <p class="question-text" >{{ chat.text }}</p>
                 <time datetime="2025-06-11">11 juni</time>
             </li>
@@ -23,10 +20,7 @@
     </ul>
 {% else %} {% comment %} empty state {% endcomment %}
     <div id="text-miniload" class="nothing-found-container">
-        <picture class="nothing-found-icon">
-            <source srcset="/assets/chat-icon.svg">
-            <img src="/assets/chat-icon.svg" width="40">
-        </picture>
+        <img class="nothing-found-icon" src="/assets/chat-icon.svg" width="40">
         <p class="nothing-found-text">Er zijn nog geen berichten gedeeld. Wees de eerste!</p>
     </div>
 {% endif %}

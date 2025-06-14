@@ -360,9 +360,6 @@ textarea {
     background-color: var(--primary-background-color);
     padding: var(--spacing-xs);
     border-radius: var(--border-radius-s);
-}
-
-.user-icon-img {
     width: 2.5rem;
 
     @media (min-width: 705px) {
