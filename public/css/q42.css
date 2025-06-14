@@ -15,9 +15,9 @@
   --font-family-heading: 'proxima-nova', sans-serif;
   --font-family-text: 'ff-tisa-sans-web-pro', sans-serif;
 
-  --heading-size-h1: 2.5rem;
-  --heading-size-h2: 2.125rem;
-  --heading-size-h3: 1.5625rem;
+  --heading-size-h1: 2.8rem;
+  --heading-size-h2: 2rem;
+  --heading-size-h3: 1.4rem;
   --text-size-s: 1rem;
 
   --text-align: center;
@@ -45,9 +45,9 @@
   --border-btn: none;
 
   @media (min-width: 770px) {
-    --heading-size-h1: 3.8rem;
+    --heading-size-h1: 4rem;
     --heading-size-h2: 2.6rem;
-    --heading-size-h3: 2rem;
+    --heading-size-h3: 1.8rem;
     --text-size-s: 1.2rem;
   }
 }
@@ -62,11 +62,11 @@ body {
 
 h1, h2, h3 {
     line-height: var(--line-height-base);
-    max-width: 14rem;
+    max-width: 16rem;
     color: var(--heading-color);
 
     @media (min-width: 770px) {
-        max-width: 18rem;
+        max-width: 25rem;
       }
 }
 
