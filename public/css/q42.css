@@ -119,10 +119,6 @@ ul {
     list-style: none;
 }
 
-li {
-    max-width: 7rem;
-}
-
 /* Buttons */
 
 button, a {

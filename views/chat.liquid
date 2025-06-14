@@ -9,18 +9,18 @@
 
 {% comment %} SHARED CHATS {% endcomment %}
 {% if chats %}  {% comment %} ideal state {% endcomment %}
-    <div id="text-miniload" class="shared-questions-container">
+    <ul id="text-miniload" class="shared-questions-container">
         {% for chat in chats %}
-            <div class="shared-question">
+            <li class="shared-question">
                 <picture class="user-icon">
                     <source srcset="/assets/user-question-icon.svg">
                     <img class="user-icon-img" alt="klantprofiel" src="/assets/user-question-icon.svg" width="40">
                 </picture>
                 <p class="question-text" >{{ chat.text }}</p>
                 <time datetime="2025-06-11">11 juni</time>
-            </div>
+            </li>
         {% endfor %}  
-    </div>
+    </ul>
 {% else %} {% comment %} empty state {% endcomment %}
     <div id="text-miniload" class="nothing-found-container">
         <picture class="nothing-found-icon">
