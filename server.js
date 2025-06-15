@@ -25,10 +25,10 @@ app.get('/', async (req, res) => {
         });
         const data = await qersResponse.json();
 
+        console.log('🔎 Qer response JSON:', data);
+
         const response = await fetch('https://fdnd.directus.app/items/messages?filter[from][_eq]=148&sort=-created');
         const json = await response.json();
-
-        console.log('🔎 Chat response JSON:', json.data);
 
         res.render('index.liquid', { qers: data, chats: json.data });
 });
