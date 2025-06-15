@@ -9,7 +9,18 @@
     <button class="main-btn" id="filter-btn">Filter</button>
 </section>
 
- 
+<ul>
+    <li>
+        {% for qer in qers %}
+            <picture>
+                <source srcset="" >
+                <img class="mensen-img" src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="150">
+            </picture>
+            <p>{{ qer.name }}</p>
+            <a href="{{ qer.email }}">{{ qer.email }}</a>
+        {% endfor %} 
+    </li>
+</ul> 
 
 {% render 'views/work-offers.liquid' %}
 
