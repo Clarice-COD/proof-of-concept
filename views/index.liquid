@@ -9,8 +9,9 @@
     <button class="main-btn" id="filter-btn">Filter</button>
 </section>
 
+{% if qers %}
 <section class="images-container">
-
+ 
     {% comment %} FILTER {% endcomment %}
      <nav class="fliter-container">
         <h3 class="filter-title">Filter op eigenschappen</h3>
@@ -36,9 +37,15 @@
             </li>
         {% endfor %} 
     </ul> 
-
 </section>
-
+{% else %}
+<section class="no-images-found-container">
+    <div class="no-images-found">
+        <h3 class="titel-no-images-found">Oeps!</h3>
+        <p class="text-no-images-found">We konden de foto's, namen en e-mailadressen even niet ophalen. Geef ons een momentje of probeer de pagina te vernieuwen.</p>
+    </div>
+</section>
+{% endif %}
 
 {% render 'views/work-offers.liquid' %}
 

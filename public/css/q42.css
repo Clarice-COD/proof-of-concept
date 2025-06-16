@@ -538,3 +538,25 @@ time {
 .person-name {
     font-size: var(--text-size-m);
 }
+
+/* No images found */
+.no-images-found-container {
+    width: 100vw;
+    height: 75vw;
+    background-color: var(--secondary-backgound-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-images-found {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-s);
+}
+
+.titel-no-images-found {
+    text-align: center;
+    margin: auto;
+}
