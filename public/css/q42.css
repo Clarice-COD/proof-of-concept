@@ -58,7 +58,7 @@ body {
     margin: 0;
 }
 
-/* TEXT */
+  /* Typografie */
 
 h1, h2, h3 {
     line-height: var(--line-height-base);
@@ -113,6 +113,7 @@ summary {
 
 a {
     text-decoration: none;
+    color: var(--color-highlight);
 }
 
 ul {
@@ -134,8 +135,11 @@ button, a {
     align-self: center;
 }
 
-/* MENU */
 
+
+/* HAMBURGER MENU / MENU */
+
+/* positionering & witruimte */
 nav {
     display: flex;
     flex-direction: row;
@@ -145,6 +149,7 @@ nav {
     padding-bottom: var(--spacing-xl);
 }
 
+/* positionering & witruimte */
 .open-menu, .scroll-down-btn {
     background: none;
     border:none;
@@ -152,39 +157,43 @@ nav {
 
 }
 
+/* button open menu */
 .open-menu {
     display: block;
 
     @media (min-width: 770px) {
         display: none;
-      }
+    }
 }
 
+/* button sluit menu hidden */
 .close-menu {
     display: none;
 }
 
+/* button open menu displayed */
 .show-close-menu {
     display: block;
 }
 
+/* verticaal menu */
 .links-menu {
     display: none;
     flex-direction: column;
 
+    /* horizontaal menu */
     @media (min-width: 770px) {
         display: flex;
         flex-direction: row;
         gap: 2rem;
-      }
+    }
 }
 
-a {
-    color: var(--color-highlight);
-}
+
 .show-menu {
     display: flex;
 }
+
 
 .scroll-down-btn {
     display: block;
@@ -195,6 +204,7 @@ a {
 }
 
 /* NAV NAAR CHAT */
+
 
 .link-to-chat{
     z-index: 1;
@@ -479,3 +489,4 @@ time {
         rotate: 180deg;
     }
 }
+
