@@ -9,18 +9,36 @@
     <button class="main-btn" id="filter-btn">Filter</button>
 </section>
 
-<ul class="people-container">
-    <li class="person">
+<section class="person">
+
+    {% comment %} FILTER {% endcomment %}
+     <nav class="fliter-container">
+        <h3 class="filter-title">Filter op eigenschappen</h3>
+        <ul class="filter-container">
+            <li><a href="/front-end"></a>front-end</li>
+            <li><a href="/harry-potter-fan"></a>harry potter fan</li>
+            <li><a href="/short-hair"></a>short hair</li>
+            <li><a href="/dont-care"></a>dont care</li>
+            <li><a href="/partner-van-de-club"></a>partner van de club</li>
+        </ul>
+    </nav>
+
+    {% comment %} IMAGES {% endcomment %}
+    <ul class="people-container">
         {% for qer in qers %}
-            <picture>
-                <source srcset="">
-                <img class="person-img" src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="150">
-            </picture>
-            <p class="person-name">{{ qer.name }}</p>
-            <a class="person-email"href="{{ qer.email }}">{{ qer.email }}</a>
+            <li>
+                <picture>
+                    <source srcset="">
+                    <img class="person-img" src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="150">
+                </picture>
+                <p class="person-name">{{ qer.name }}</p>
+                <a class="person-email"href="{{ qer.email }}">{{ qer.email }}</a>
+            </li>
         {% endfor %} 
-    </li>
-</ul> 
+    </ul> 
+
+</section>
+
 
 {% render 'views/work-offers.liquid' %}
 
