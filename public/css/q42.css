@@ -490,3 +490,33 @@ time {
     }
 }
 
+
+
+/* IMAGE SCROLL */
+
+.fliter-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+}
+
+.people-container {
+    height: 75vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    background-color: aqua;
+}
+
+.person {
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}

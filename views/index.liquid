@@ -9,12 +9,12 @@
     <button class="main-btn" id="filter-btn">Filter</button>
 </section>
 
-<section class="person">
+<section class="images-container">
 
     {% comment %} FILTER {% endcomment %}
      <nav class="fliter-container">
         <h3 class="filter-title">Filter op eigenschappen</h3>
-        <ul class="filter-container">
+        <ul class="filters">
             <li><a href="/front-end"></a>front-end</li>
             <li><a href="/harry-potter-fan"></a>harry potter fan</li>
             <li><a href="/short-hair"></a>short hair</li>
@@ -26,7 +26,7 @@
     {% comment %} IMAGES {% endcomment %}
     <ul class="people-container">
         {% for qer in qers %}
-            <li>
+            <li class="person">
                 <picture>
                     <source srcset="">
                     <img class="person-img" src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="150">
