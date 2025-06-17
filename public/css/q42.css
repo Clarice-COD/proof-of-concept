@@ -514,15 +514,27 @@ footer section:not(#section-img-scroll) {
     left: 0;
     background: var(--secondary-backgound-color);
     gap: var(--gap-m);
+
+    @media (min-width: 770px) {
+        height: 100vh;
+      }
   }
 
 #title-img-scroll {
     width: 12rem;
+
+    @media (min-width: 770px) {
+        width: 16rem;
+      }
 }
 
 #text-img-scroll {
     width: 12rem;
     text-align: left;
+
+    @media (min-width: 770px) {
+        width: 20rem;
+      }
 }
 
 .intro-img-scroll {
@@ -533,13 +545,19 @@ footer section:not(#section-img-scroll) {
 
 /* Img size */
 .person {
-  height: 50vh;
   width: auto;
   object-fit: cover;
 }
 
 .person-img {
     border-radius: var(--border-radius-s);
+    width: auto;
+    height: 50vh;
+
+    @media (min-width: 770px) {
+        width: 40vw;
+        height: auto;
+      }
 }
 
 .person-name {
@@ -554,7 +572,7 @@ footer section:not(#section-img-scroll) {
   justify-content: flex-start;
   align-items: center;
   padding: 50px 10vw;
-  gap: 1rem;
+  gap: 2rem;
   margin: auto;
 }
 
