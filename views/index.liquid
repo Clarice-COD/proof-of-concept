@@ -6,7 +6,7 @@
 <section class="intro-text-container">
     <h1>De mensen van Q42</h1>
     <p>Onze mensen noemen we Q'ers. Maar wie zijn dat dan? Die Q'ers die het internet aan het afmaken zijn? Check ze allemaal hieronder. En wil je ook Q'er worden, scroll dan even voorbij onze hoofden voor de openstaande vacatures!</p>
-    <button class="main-btn" id="filter-btn">Filter</button>
+    {% comment %} <button class="main-btn" id="filter-btn">Filter</button> {% endcomment %}
 </section>
 
 {% comment %} FILTER {% endcomment %}
@@ -25,7 +25,10 @@
 
 <section id="section-img-scroll" class="images-container">
     <ul class="people-container">
-        <h3 class="filter-title">De mensen van Q42</h3>
+        <li class="intro-img-scroll">
+            <h3 id="title-img-scroll">Neem gerust contact met ons op!</h3>
+            <p id="text-img-scroll">Stel vragen per mail of in de openbare chat via de knop rechtsonder in de hoek. </p>
+        </li>
         {% for qer in qers %}
             <li class="person">
                 <img class="person-img" src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="350">

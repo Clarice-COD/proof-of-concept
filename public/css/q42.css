@@ -495,23 +495,93 @@ time {
 
 /* IMAGE SCROLL */
 
-.fliter-container {
+/* Behoudt aangegeven formaat waar padding en margin geen invloed op heeft */
+* {
+    box-sizing: border-box;
+  }
+
+/* formaat alle section behalve met de images */
+footer section:not(#section-img-scroll) {
+  height: 50vh;
+  width: 100%;
+}
+
+/* Positionering section img scroll */
+#section-img-scroll {
+    height: 75vh;
+    overflow: scroll;
+    display: flex;
+    left: 0;
+    background: var(--secondary-backgound-color);
+    gap: var(--gap-m);
+  }
+
+#title-img-scroll {
+    width: 12rem;
+}
+
+#text-img-scroll {
+    width: 12rem;
+    text-align: left;
+}
+
+.intro-img-scroll {
     display: flex;
     flex-direction: column;
+    gap: var(--gap-s);
+}
+
+/* Img size */
+.person {
+  height: 50vh;
+  width: auto;
+  object-fit: cover;
+}
+
+.person-img {
+    border-radius: var(--border-radius-s);
+}
+
+.person-name {
+    text-align: left; 
+    margin: 0;
+}
+
+/* Positionering afbeelding en tekst */
+.people-container {
+  height: 60vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
+  gap: 1rem;
+  margin: auto;
 }
 
 
-.people-container {
-    height: 75vh;
+
+
+
+
+
+
+
+
+/* .fliter-container {
+    display: flex;
+    flex-direction: column;
+} */
+
+
+/* .people-container {
+    height: 100vh;
     overflow: scroll;
     display: flex;
     flex-direction: row;
     left: 0;
-    /* background-color: aqua; */
-    gap: var(--gap-m);
-}
+} */
 
-.person {
+/* .person {
     height: 50vh;
     display: flex;
     justify-content: flex-start;
@@ -521,9 +591,9 @@ time {
       @media (min-width: 1024px) {
         height: 70vh;
       }
-}
+} */
 
-.person-img {
+/* .person-img {
     width: 22rem;
 
     @media (min-width: 705px) {
@@ -533,7 +603,7 @@ time {
       @media (min-width: 1024px) {
         width: 35rem;
       }
-}
+} */
 
 .person-name {
     font-size: var(--text-size-m);
