@@ -1,5 +1,6 @@
 {% render 'views/head.liquid' %}
 {% render 'views/nav.liquid' %} 
+<main class="container">
 
 <a class="link-to-chat" href="#chatSection"><img class="link-chat-img" src="/assets/chat-icon.svg" width="40" alt="navigeer naar chat"></a>
 
@@ -57,5 +58,6 @@
 
 {% render 'views/chat.liquid', 
 chats: chats %}
+</main>
 
 {% render 'views/foot.liquid' %}
