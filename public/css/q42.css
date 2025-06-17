@@ -514,6 +514,7 @@ footer section:not(#section-img-scroll) {
     left: 0;
     background: var(--secondary-backgound-color);
     gap: var(--gap-m);
+    padding-left: var(--spacing-m);
 
     @media (min-width: 770px) {
         height: 100vh;
@@ -647,4 +648,21 @@ footer section:not(#section-img-scroll) {
 .titel-no-images-found {
     text-align: center;
     margin: auto;
+}
+
+/* Filter */
+.filter-images {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    justify-content: center;
+    margin: auto;
+}
+
+h3 {
+    width: 12rem;
+}
+
+.opslaan-btn {
+    align-self: flex-start;
 }

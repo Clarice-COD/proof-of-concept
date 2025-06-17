@@ -25,17 +25,17 @@
 {% if qers %}
     <section id="section-img-scroll" class="images-container">
         {% comment %} Filter {% endcomment %}
-        <form action="/" method="GET">
-            <h3>Filter op interesse</h3>
+        <form class="filter-images" action="/" method="GET">
+            <h3>Filter op interesses</h3>
             {% assign allTags = "Front-end,Harry Potter fan,Partner van de club,Short hair,don't care" | split: "," %}
             {% for tag in allTags %}
             <label>
-                <input type="checkbox" name="categorie" value="{{ tag }}"{% if tags contains tag %}checked{% endif %}>{{ tag }}
+                <input class="filters" type="checkbox" name="categorie" value="{{ tag }}"{% if tags contains tag %}checked{% endif %}>{{ tag }}
             </label>
             {% endfor %}
-            <button type="submit">Filter</button>
+            <button class="main-btn opslaan-btn" type="submit">Opslaan</button>
         </form>
-        
+
         {% comment %} Personen {% endcomment %}
         <ul class="people-container">
             {% for qer in qers %}
