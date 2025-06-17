@@ -23,25 +23,30 @@
 </nav> {% endcomment %}
 
 {% if qers %}
-
-<section id="section-img-scroll" class="images-container">
-    <ul class="people-container">
-        <form action="/filter" method="GET">
-            <label>Filter op interesse
-            <input type="checkbox" name="categorie" value="{{ tag }}">
-            {{ tag }}
+    <section id="section-img-scroll" class="images-container">
+        {% comment %} Filter {% endcomment %}
+        <form action="/" method="GET">
+            <h3>Filter op interesse</h3>
+            {% assign allTags = "Front-end,Harry Potter fan,Partner van de club,Short hair,don't care" | split: "," %}
+            {% for tag in allTags %}
+            <label>
+                <input type="checkbox" name="categorie" value="{{ tag }}"{% if tags contains tag %}checked{% endif %}>{{ tag }}
             </label>
+            {% endfor %}
+            <button type="submit">Filter</button>
         </form>
-        {% for qer in qers %}
+        
+        {% comment %} Personen {% endcomment %}
+        <ul class="people-container">
+            {% for qer in qers %}
             <li class="person">
-                <img class="person-img" src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="350">
+                <img class="person-img" src="{{ qer.avatars | first }}" alt="{{ qer.name }}" width="350">
                 <p class="person-name">{{ qer.name }}</p>
-                <a class="person-email"href="{{ qer.email }}">{{ qer.email }}</a>
+                <a class="person-email" href="{{ qer.email }}">{{ qer.email }}</a>
             </li>
-        {% endfor %} 
-    </ul> 
-</section>
-
+            {% endfor %}
+        </ul>
+  </section>
 {% else %}
 <section class="no-images-found-container">
     <div class="no-images-found">

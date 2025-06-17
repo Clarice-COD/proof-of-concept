@@ -16,21 +16,53 @@ app.engine('liquid', engine.express());
 app.set('views', './views')
 app.set('view engine', 'liquid');
 
+
+// Data ophalen en filteren
 app.get('/', async (req, res) => {
-    console.log('📥 Route / is aangeroepen');
-        const qersResponse = await fetch('https://the-sprint-api.onrender.com/people', {
-            headers: {
-                'X-API-Key': `${process.env.API_KEY}`
-            }
-        });
-        const data = await qersResponse.json();
+  console.log('📥 Route / is aangeroepen');
 
-        console.log('🔎 Qer response JSON:', data);
+  // Ik ga de data ophalen van de mensen van Q42
+  const qersResponse = await fetch('https://the-sprint-api.onrender.com/people', {
+    // Ik ga de sleutel van de Q42 databse toevoegen om de data in te zien
+    headers: {
+      'X-API-Key': `${process.env.API_KEY}`
+    }
+  });
 
-        const response = await fetch('https://fdnd.directus.app/items/messages?filter[from][_eq]=148&sort=-created');
-        const json = await response.json();
+  const data = await qersResponse.json();
 
-        res.render('index.liquid', { qers: data, chats: json.data });
+  // Ik ga de data ophalen voor de chatberichten
+  const response = await fetch('https://fdnd.directus.app/items/messages?filter[from][_eq]=148&sort=-created');
+  const json = await response.json();
+
+  // Verwijs naar de name attribute in de input namelijk categorie
+  let selected = req.query.categorie;
+  // In deze regel worden de filter opties in strings gezet zodat er meerdere filters geselecteerd kunnen worden. Typeof geeft aan wat voor waarde de selected is, in dit geval dus een string === maakt een vergelijking tussen selected en een string
+  if (typeof selected === 'string') selected = [selected];
+
+  // tag.split(',') zorgt ervoor dat wanneer er een , in de array zit, deze 2 opties worden gesplits als 2 losse arrays
+  // .map(t => t.trim()) zorgt ervoor dat alle spaties uit de arrays worden gehaald
+  // .flatMap(...) past bovenstaande bewerking toe op elke string in de array en voegt dit samen
+  const normalizeTags = tags => {
+    return tags.flatMap(tag => tag.split(',').map(t => t.trim()));
+  };
+
+  // Filteren op tags
+  const filteredQers = selected
+  ? data.filter(person => {
+      // person.tags ? ... : ... een korte manier van een if-else. normalizeTags(person.tags) als person.tags bestaat, voeg normalizeTags toe om de code op te schonen voor gebruik
+      const tags = person.tags ? normalizeTags(person.tags) : [];
+      // tags.some(...) checkt of de array of arrays voldoen aan bepaalde voorwaarden. tag => selected.includes(tag) kijtk of elke tag voorkomt in de geselecteerde array 
+      return tags.some(tag => selected.includes(tag));
+    })
+  : data;
+
+  // Render de pagina met filters en chats
+  res.render('index.liquid', {
+    qers: filteredQers,     // personen (gefilterd)
+    chats: json.data,       // chatberichten
+    tags: selected || []    // filters
+  });
 });
 
   // Post in chat
