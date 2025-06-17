@@ -9,35 +9,33 @@
     <button class="main-btn" id="filter-btn">Filter</button>
 </section>
 
-{% if qers %}
-<section class="images-container">
- 
-    {% comment %} FILTER {% endcomment %}
-     <nav class="fliter-container">
-        <h3 class="filter-title">Filter op eigenschappen</h3>
-        <ul class="filters">
-            <li class="filter"><a href="/front-end"></a>front-end</li>
-            <li class="filter"><a href="/harry-potter-fan"></a>harry potter fan</li>
-            <li class="filter"><a href="/short-hair"></a>short hair</li>
-            <li class="filter"><a href="/dont-care"></a>dont care</li>
-            <li class="filter"><a href="/partner-van-de-club"></a>partner van de club</li>
-        </ul>
-    </nav>
+{% comment %} FILTER {% endcomment %}
+{% comment %} <nav class="fliter-container">
+    <h3 class="filter-title">Filter op eigenschappen</h3>
+    <ul class="filters">
+        <li class="filter"><a href="/front-end"></a>front-end</li>
+        <li class="filter"><a href="/harry-potter-fan"></a>harry potter fan</li>
+        <li class="filter"><a href="/short-hair"></a>short hair</li>
+        <li class="filter"><a href="/dont-care"></a>dont care</li>
+        <li class="filter"><a href="/partner-van-de-club"></a>partner van de club</li>
+    </ul>
+</nav> {% endcomment %}
 
-    {% comment %} IMAGES {% endcomment %}
+{% if qers %}
+
+<section id="section-img-scroll" class="images-container">
     <ul class="people-container">
+        <h3 class="filter-title">De mensen van Q42</h3>
         {% for qer in qers %}
             <li class="person">
-                <picture>
-                    <source srcset="">
-                    <img class="person-img" src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="350">
-                </picture>
+                <img class="person-img" src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="350">
                 <p class="person-name">{{ qer.name }}</p>
                 <a class="person-email"href="{{ qer.email }}">{{ qer.email }}</a>
             </li>
         {% endfor %} 
     </ul> 
 </section>
+
 {% else %}
 <section class="no-images-found-container">
     <div class="no-images-found">
