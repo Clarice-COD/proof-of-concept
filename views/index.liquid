@@ -26,10 +26,12 @@
 
 <section id="section-img-scroll" class="images-container">
     <ul class="people-container">
-        <li class="intro-img-scroll">
-            <h3 id="title-img-scroll">Neem gerust contact met ons op!</h3>
-            <p id="text-img-scroll">Stel vragen per mail of in de openbare chat via de knop rechtsonder in de hoek. </p>
-        </li>
+        <form action="/filter" method="GET">
+            <label>Filter op interesse
+            <input type="checkbox" name="categorie" value="{{ tag }}">
+            {{ tag }}
+            </label>
+        </form>
         {% for qer in qers %}
             <li class="person">
                 <img class="person-img" src="{{ qer.avatars | first }}" alt="{{ qer.name | default: 'Gebruiker' }}" width="350">
