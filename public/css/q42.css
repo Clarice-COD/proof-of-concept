@@ -156,68 +156,13 @@ button, a, label, input, textarea {
 /* HAMBURGER MENU / MENU */
 
 /* positionering & witruimte */
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: var(--gap-m);
-    padding-top: var(--spacing-l);
-    padding-bottom: var(--spacing-xl);
-}
-
-/* positionering & witruimte */
-.open-menu, .scroll-down-btn {
-    background: none;
-    border:none;
-    color: var(--color-highlight);
-
-}
-
-/* button open menu */
-.open-menu {
-    display: block;
-
-    @media (min-width: 770px) {
-        display: none;
-    }
-}
-
-/* button sluit menu hidden */
-.close-menu {
-    display: none;
-}
-
-/* button open menu displayed */
-.show-close-menu {
-    display: block;
-}
-
-/* verticaal menu */
-.links-menu {
-    display: none;
-    flex-direction: column;
-
-    /* horizontaal menu */
-    @media (min-width: 770px) {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-    }
-}
 
 
-.show-menu {
-    display: flex;
-}
 
 
-.scroll-down-btn {
-    display: block;
 
-    @media (min-width: 770px) {
-        display: none;
-      }
-}
+
+
 
 /* NAV NAAR CHAT */
 
@@ -728,4 +673,15 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: var(--gap-m);
+}
+
+/* MENU */
+.hidden-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.links-menu {
+    display: flex;
+    flex-direction: column;
 }
