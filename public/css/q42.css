@@ -719,6 +719,7 @@ h3 {
 .filter:hover {
     box-shadow: inset 0px -6px 0px 0px #595E4D;
     background-color: #737A64;
+    scale: 1.05;
 }
 
 
