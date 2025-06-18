@@ -68,6 +68,8 @@
 body {
     background-color: var(--primary-background-color);
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
   /* Typografie */
@@ -199,7 +201,6 @@ button, a, label, input, textarea {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-m);
-    padding-bottom: var(--spacing-xl);
 }
 
 
@@ -212,13 +213,12 @@ button, a, label, input, textarea {
     width: 100vw;
     justify-content: flex-start;
     gap: var(--gap-m);
-    padding-bottom: var(--spacing-xl);
 }
 
 /* WORK OFFERS */
 
 .work-offers-container {
-    padding-bottom: var(--spacing-xl);
+
 }
 
 .work-offer {
@@ -383,8 +383,6 @@ time {
     flex-direction: column;
     background-color: var(--secondary-backgound-color);
     gap: var(--spacing-m);
-    padding-top: var(--spacing-xl);
-    padding-bottom: var(--spacing-xl);
 }
 
 .foot-links {
@@ -471,8 +469,8 @@ time {
   }
 
 /* formaat alle section behalve met de images */
-section:not(#section-img-scroll) {
-  height: 50vh;
+section:not(#section-img-scroll, #chatSection) {
+  height: 60vh;
   width: 100%;
 
   @media (min-width: 770px) {
@@ -670,7 +668,7 @@ h3 {
 
 
 
-.intro-text {
+.text-section {
     display: flex;
     flex-direction: column;
     gap: var(--gap-m);
@@ -699,20 +697,26 @@ h3 {
 }
 
 .menu {
+    position: fixed;
     display: flex;
+    left: 50%;
+    transform: translateX(-50%);
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 4rem;
-    width: 14rem;
+    width: 100vw;
     margin: auto;
-    margin-top: 1rem;
+    top: 0;
+    padding: 0.5rem;
+    background-color: var(--primary-background-color);
+    z-index: 1;
 }
 
 .open-menu-btn {
     color: var(--color-highlight);
     background: none;
     border: none;
+    font-size: var(--text-size-s);
 }
 
 .links-menu {
@@ -736,9 +740,16 @@ h3 {
   }
 
   nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    /* position: fixed;
+    top: 0; */
+    /* width: 100vw;
+    height: 100vh; */
   }
+
+  main {
+    margin-top: 6rem;
+  }
+
+.scroll-down-btn {
+    font-size: var(--text-size-s);
+}
