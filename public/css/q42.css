@@ -28,7 +28,8 @@
   --heading-size-h1: 2.8rem;
   --heading-size-h2: 2rem;
   --heading-size-h3: 1.4rem;
-  --text-size-m: 1.6rem;
+  --text-size-l: 1.6rem;
+  --text-size-m: 1.3rem;
   --text-size-s: 1rem;
 
   --text-align: center;
@@ -607,7 +608,7 @@ section:not(#section-img-scroll) {
 } */
 
 .person-name {
-    font-size: var(--text-size-m);
+    font-size: var(--text-size-l);
 }
 
 /* No images found */
@@ -677,8 +678,17 @@ h3 {
 
 /* MENU */
 .hidden-menu {
+    position:fixed;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-background-color);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    gap: 1rem;
 }
 
 .links-menu {
@@ -701,4 +711,20 @@ h3 {
     color: var(--color-highlight);
     background: none;
     border: none;
+}
+
+.links-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.link-menu {
+    color: var(--secondary-text-color);
+    font-size: var(--text-size-m);
+}
+
+.close-menu-btn {
+    align-self: flex-start;
+    margin-left: 2rem;
 }
