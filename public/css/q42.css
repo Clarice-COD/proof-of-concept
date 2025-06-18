@@ -230,11 +230,20 @@ nav {
     background-color: var(--primary-background-color);
     border: 3px solid #84bc2d;
     border-radius: var(--border-radius-s);
+
+    @media (min-width: 770px) {
+        bottom: 1.5rem;
+        right: 1.5rem;
+      }
 }
 
 .link-chat-img {
     display: block;
     padding: var(--spacing-s);
+
+    @media (min-width: 770px) {
+        width: 3rem;
+      }
 }
 
 /* INTRO */
@@ -685,10 +694,15 @@ section:not(#section-img-scroll) {
     width: 20rem;
     justify-content: center;
     margin: auto;
+    gap: var(--gap-m);
 }
 
 h3 {
-    width: 12rem;
+    width: 13rem;
+
+    @media (min-width: 770px) {
+        width: 17rem;
+      }
 }
 
 .opslaan-btn {
