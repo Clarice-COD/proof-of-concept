@@ -501,10 +501,23 @@ time {
   }
 
 /* formaat alle section behalve met de images */
-footer section:not(#section-img-scroll) {
+section:not(#section-img-scroll) {
   height: 50vh;
   width: 100%;
+
+  @media (min-width: 770px) {
+    height: 60vh;
+  }
 }
+
+/* footer {
+    height: 50vh;
+  width: 100%;
+
+  @media (min-width: 770px) {
+    height: 60vh;
+  }
+} */
 
 /* Positionering section img scroll */
 #section-img-scroll {
@@ -677,4 +690,12 @@ h3 {
 .filter:hover {
     box-shadow: inset 0px -6px 0px 0px #595E4D;
     background-color: #737A64;
+}
+
+
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-m);
 }
