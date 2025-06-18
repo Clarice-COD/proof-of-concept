@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "proxima-nova";
+    src: url('/fonts');
+  }
+
+  @font-face {
+    font-family: "proxima-nova";
+    src: url('/ff-tisa-sans-web-pro');
+  }
+
 :root {
     /* Tekstkleuren */
   --heading-color: #eeeeee;
@@ -65,6 +75,7 @@ h1, h2, h3 {
     line-height: var(--line-height-base);
     max-width: 16rem;
     color: var(--heading-color);
+    font-family: var(--font-family-heading);
 
     @media (min-width: 770px) {
         max-width: 25rem;
@@ -87,6 +98,10 @@ h3 {
     font-size: var(--heading-size-h3);
     margin: 0;
 
+}
+
+p, label, a, time, li {
+    font-family: var(--font-family-text);
 }
 
 p {
