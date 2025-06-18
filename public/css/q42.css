@@ -123,7 +123,7 @@ ul {
 
 /* Buttons */
 
-button, a {
+button, a, label, input, textarea {
     cursor: pointer;
 }
 
