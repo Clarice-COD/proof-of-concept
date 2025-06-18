@@ -712,14 +712,26 @@ h3 {
     background: none;
     border: none;
     font-size: var(--text-size-s);
+
+    @media (min-width: 770px) {
+        display: none;
+    }
 }
 
 .logo {
+    width: 2.5rem;
 
+    @media (min-width: 770px) {
+        width: 3rem;
+    }
 }
 
 .scroll-down-btn {
     font-size: var(--text-size-s);
+
+    @media (min-width: 770px) {
+        display: none;
+    }
 }
 
 /* aside */
@@ -738,6 +750,15 @@ h3 {
     gap: 1rem;
     transform: translateX(-100%);
     transition: transform 0.25s ease-in-out;
+
+    @media (min-width: 770px) {
+        transform: none;
+        background-color: transparent;
+        flex-direction: row;
+        gap: 7rem;
+        align-items: center;
+        height: 6rem;
+    }
 }
 
 .hidden-menu:target {
@@ -748,6 +769,18 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+
+    @media (min-width: 770px) {
+        flex-direction: row;
+    }
+}
+
+.links-menu-left {
+    justify-content: flex-start;
+}
+
+.right-menu-left {
+    justify-content: flex-end;
 }
 
 .link-menu {
@@ -762,4 +795,8 @@ h3 {
     background-color: var(--color-highlight);
     color: var(--primary-background-color);
     border-radius: var(--border-radius-s);
+
+    @media (min-width: 770px) {
+        display: none;
+    }
 }
