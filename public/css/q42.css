@@ -673,7 +673,9 @@ h3 {
 }
 
 
-
+.filter-box {
+    accent-color: var(--color-highlight);
+}
 
 
 
