@@ -29,8 +29,8 @@
             <h3>Filter op interesses</h3>
             {% assign allTags = "Front-end,Harry Potter fan,Partner van de club,Short hair,don't care" | split: "," %}
             {% for tag in allTags %}
-            <label>
-                <input class="filters" type="checkbox" name="categorie" value="{{ tag }}"{% if tags contains tag %}checked{% endif %}>{{ tag }}
+            <label class="filter">
+                <input class="filter-box" type="checkbox" name="categorie" value="{{ tag }}"{% if tags contains tag %}checked{% endif %}>{{ tag }}
             </label>
             {% endfor %}
             <button class="main-btn opslaan-btn" type="submit">Opslaan</button>

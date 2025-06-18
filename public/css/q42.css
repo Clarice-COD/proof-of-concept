@@ -666,3 +666,10 @@ h3 {
 .opslaan-btn {
     align-self: flex-start;
 }
+
+.filter {
+    padding: 10px 20px 10px 20px;
+    background-color: #595E4D;
+    border: solid #777B6F 2px;
+    border-radius: var(--border-radius-s);
+}
