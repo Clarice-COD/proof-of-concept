@@ -41,7 +41,12 @@
         <ul class="people-container">
             {% for qer in qers %}
             <li class="person">
-                <img class="person-img" src="{{ qer.avatars | first }}" alt="{{ qer.name }}" width="350">
+                <picture>
+                    <source type="image/avif" srcset="{{ qer.avatars | first }}?format=avif">
+                    <source type="image/webp" srcset="{{ qer.avatars | first }}?format=webp">
+                    <img src="{{ qer.avatars | first }}" width="350" height="350" alt="profielfoto van" loading="lazy">
+                </picture>
+                {% comment %} <img class="person-img" src="{{ qer.avatars | first }}" alt="{{ qer.name }}" width="350"> {% endcomment %}
                 <p class="person-name">{{ qer.name }}</p>
                 <a class="person-email" href="{{ qer.email }}">{{ qer.email }}</a>
             </li>
