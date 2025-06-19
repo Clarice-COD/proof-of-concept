@@ -4,7 +4,7 @@
   }
 
   @font-face {
-    font-family: "proxima-nova";
+    font-family: "ff-tisa-sans-web-pro";
     src: url('/ff-tisa-sans-web-pro');
   }
 
@@ -85,6 +85,10 @@ h1, h2, h3 {
       }
 }
 
+caption {
+    font-family: var(--font-family-heading);
+}
+
 h1 {
     font-size: var(--heading-size-h1);
     text-align: var(--text-align);
@@ -103,7 +107,7 @@ h3 {
 
 }
 
-p, label, a, time, li, th, td, caption {
+p, label, a, time, li, th, td {
     font-family: var(--font-family-text);
 }
 
@@ -293,6 +297,7 @@ form {
     width: 75vw;
     padding: var(--spacing-m);
     border-radius: var(--border-radius-s);
+    margin: auto;
 
     @media (min-width: 705px) {
         width: 50vw;
@@ -661,6 +666,12 @@ h3 {
 }
 
 .filter:hover {
+    box-shadow: inset 0px -6px 0px 0px #595E4D;
+    background-color: #737A64;
+    scale: 1.05;
+}
+
+.filter:focus {
     box-shadow: inset 0px -6px 0px 0px #595E4D;
     background-color: #737A64;
     scale: 1.05;
