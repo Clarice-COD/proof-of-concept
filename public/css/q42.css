@@ -677,7 +677,10 @@ h3 {
     accent-color: var(--color-highlight);
 }
 
-
+table {
+    border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+}
 
 
 
