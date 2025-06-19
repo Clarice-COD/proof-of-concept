@@ -44,7 +44,7 @@
                 {% comment %} <picture> {% endcomment %}
                     {% comment %} <source type="image/avif" srcset="{{ qer.avatars | first }}?format=avif">
                     <source type="image/webp" srcset="{{ qer.avatars | first }}?format=webp"> {% endcomment %}
-                    <img src="{{ qer.avatars | first }}" width="350" height="350" alt="profielfoto van" loading="lazy">
+                    <img class="person-img" src="{{ qer.avatars | first }}" width="350" height="350" alt="profielfoto van" loading="lazy">
                 {% comment %} </picture> {% endcomment %}
                 {% comment %} <img class="person-img" src="{{ qer.avatars | first }}" alt="{{ qer.name }}" width="350"> {% endcomment %}
                 <p class="person-name">{{ qer.name }}</p>
