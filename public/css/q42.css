@@ -773,7 +773,7 @@ table {
 .links-menu {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 
     @media (min-width: 770px) {
         flex-direction: row;
@@ -790,7 +790,7 @@ table {
 
 .link-menu {
     color: var(--secondary-text-color);
-    font-size: var(--text-size-m);
+    font-size: var(--text-size-s);
 }
 
 .close-menu-btn {
@@ -821,6 +821,10 @@ caption {
     color: var(--secondary-text-color);
     font-size: var(--text-size-l);
     padding: 1rem;
+
+    @media (min-width: 946px) {
+        padding: 2rem;
+     }
 }
 
 th, td {
@@ -829,4 +833,12 @@ th, td {
     color: var(--primary-text-color);
     font-size: var(--text-size-s);
     text-align: left;
+
+    @media (min-width: 728px) {
+       padding: 1rem;
+    }
+
+    @media (min-width: 946px) {
+        padding: 3rem;
+     }
 }
