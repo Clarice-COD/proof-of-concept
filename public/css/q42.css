@@ -324,6 +324,7 @@ textarea {
     justify-self: center;
     gap: var(--gap-m);
     padding: var(--spacing-l);
+    margin: auto;
 }
 
 .shared-question {
@@ -336,6 +337,7 @@ textarea {
     gap: var(--gap-m);
     border-radius: var(--border-radius-s);
     align-items: center;
+    margin: auto;
 
     @media (min-width: 705px) {
         width: 50vw;
