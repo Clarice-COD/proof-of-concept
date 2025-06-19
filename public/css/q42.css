@@ -103,7 +103,7 @@ h3 {
 
 }
 
-p, label, a, time, li {
+p, label, a, time, li, th, td, caption {
     font-family: var(--font-family-text);
 }
 
@@ -804,4 +804,29 @@ table {
     @media (min-width: 770px) {
         display: none;
     }
+}
+
+/* TABEL */
+
+table {
+    width: 80vw;
+   margin: auto;
+   border-top: 1px solid var(--color-highlight);
+   border-bottom: 1px solid var(--color-highlight);
+   border-right: none;
+   border-left: none;
+}
+
+caption {
+    color: var(--secondary-text-color);
+    font-size: var(--text-size-l);
+    padding: 1rem;
+}
+
+th, td {
+    border-top: 1px solid var(--color-highlight);
+    padding: 0.5rem;
+    color: var(--primary-text-color);
+    font-size: var(--text-size-s);
+    text-align: left;
 }
