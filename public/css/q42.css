@@ -158,22 +158,6 @@ button, a, label, input, textarea {
     align-self: center;
 }
 
-
-
-/* HAMBURGER MENU / MENU */
-
-/* positionering & witruimte */
-
-
-
-
-
-
-
-
-/* NAV NAAR CHAT */
-
-
 .link-to-chat{
     z-index: 1;
     position: fixed;
@@ -485,15 +469,6 @@ section:not(#section-img-scroll, #chatSection) {
   }
 }
 
-/* footer {
-    height: 50vh;
-  width: 100%;
-
-  @media (min-width: 770px) {
-    height: 60vh;
-  }
-} */
-
 /* Positionering section img scroll */
 #section-img-scroll {
     height: 75vh;
@@ -564,53 +539,6 @@ section:not(#section-img-scroll, #chatSection) {
   gap: 2rem;
   margin: auto;
 }
-
-
-
-
-
-
-
-
-
-
-/* .fliter-container {
-    display: flex;
-    flex-direction: column;
-} */
-
-
-/* .people-container {
-    height: 100vh;
-    overflow: scroll;
-    display: flex;
-    flex-direction: row;
-    left: 0;
-} */
-
-/* .person {
-    height: 50vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-
-      @media (min-width: 1024px) {
-        height: 70vh;
-      }
-} */
-
-/* .person-img {
-    width: 22rem;
-
-    @media (min-width: 705px) {
-        width: 28rem;
-      }
-
-      @media (min-width: 1024px) {
-        width: 35rem;
-      }
-} */
 
 .person-name {
     font-size: var(--text-size-l);
@@ -695,16 +623,9 @@ table {
   border: 2px solid rgb(140 140 140);
 }
 
-
-
-
-
   main {
     margin-top: 6rem;
   }
-
-
-
 
 /* MENUUUUUUUUUUUUUUUUUUUU */
 
