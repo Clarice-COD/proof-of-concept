@@ -41,6 +41,41 @@ Q42 wil op een trotse en speelse manier laten zien wie er bij het bedrijf werken
 De portretfoto's van Q42 heb ik in een horizontale scroll gezet. Daarnaast heb ik een filter gemaakt die filtert op de profielfoto's, afhankelijk van de eigenschappen van de mensen van Q42. Ook heb ik een chat gemaakt waar bezoekers hun vragen kunnen delen. Deze website werkt responsive en is gedeeltelijk progressive enhanced. 
 
 
+### horizontale scroll portret foto's
+Ik heb de afbeeldingen groot in beeld gezet. Waarom? Omdat ik daarmee de aandacht wil trekken. De horizontale scroll vind ik goede impact hebben op de afwisseling van de website. er is nou eenmaal net weer iets meer te doen. Dit maakt het speelser op een porffesionele manier. Zie de horizontale scroll in de video hieronder: 
+
+https://github.com/user-attachments/assets/7ba95054-2a20-4ec0-a5e8-f9fe6dde50eb
+
+
+### Filteren op portret foto's
+
+Ik heb filters gemaakt van de eigenschappen van de mensen van Q42. Dit heb ik via een formulier gemaakt. Zie hieronder de 5 filtrs:
+
+- Front-end
+- Harry Potter fan
+- Partner van de club
+- Short hair
+- don't care
+
+Neutraal:
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/b698668c-d951-4fac-b580-9b2967a71372" />
+
+Hover:
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/955ed3f8-19fe-44b2-9fd2-7508c0964cc9" />
+
+Geselecteerd:
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/5de6eed5-fdd7-49b2-8c63-bbe8d3ec2276" />
+
+
+### Openbare chat
+Ik heb een openbare chat gemaakt voor op de web pagina 'mensen'. Hier kunnen gebruikers gemakkelijker hun vragen kwijt. Om de gebruikservaring te verbeteren heb ik een aantal states toegevoegd, namelijk de empty, loading en success states. Ook heb ik partial loading toegepast zodat niet de gehele website reload maar alleen de chats.
+
+https://github.com/user-attachments/assets/62ee3602-4cda-4ba1-9122-7e8a540cad2a
+
+
 
 
 
