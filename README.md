@@ -3,6 +3,17 @@ Instruecties van deze opdracht: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 # Het hermaken van de mensenpagina van Q42
 Ontwerp en maak een data driven online concept voor een opdrachtgever.
 
+### Mobiele:
+
+<img height="400" alt="image" src="https://github.com/user-attachments/assets/42cd55c4-265d-4fea-8aac-e197afb8443a"/>
+
+### Desktop:
+
+<img height="400" alt="image" src="https://github.com/user-attachments/assets/807c273f-8afd-42a6-9939-5239c2dab7ce"/>
+
+
+
+
 
 ## Inhoudsopgave
 
