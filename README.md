@@ -1,7 +1,8 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+Instruecties van deze opdracht: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+# Het hermaken van de mensenpagina van Q42
+Ontwerp en maak een data driven online concept voor een opdrachtgever.
+
 
 ## Inhoudsopgave
 
@@ -13,6 +14,18 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
+
+### Over Q42
+Q42 is een technisch creatief bureau met een kantoor in Den Haag en Amsterdam, die deel uitmaakt van het moederbedrijf Eidra. Eidra bestaat uit ongeveer 1.200 leden en Q42 uit iets meer dan 100. De bedrijfsnaam ‘Q42’ komt van het boek “The Hitchhiker’s Guide to the Galaxy”, waarin ‘42’ het antwoord is op de ultieme vraag over het leven, het universum en alles.
+
+### Probleemstelling
+Q42 wil graag dat we de 'mensen'-pagina aantrekkelijker, speelser en uitnodigender maken, zodat de bezoekers de aandacht vasthouden.
+
+De pagina is momenteel vrij statisch, waardoor de bezoekers snel verder klikken zonder echt het team te leren kennen. De uitdaging is om een nieuwe speelse en interactieve 'mensen-pagina’ te ontwerpen en te bouwen die past bij de huisstijl van Q42. De focus ligt op het geven van een leuke en interactieve ervaring aan de bezoeker, waaronder het gebruiken van unieke filters.
+
+### Oplossing
+Q42 wil op een trotse en speelse manier laten zien wie er bij het bedrijf werken. Daarom mogen wij de ‘mensen’-pagina op een eigen, creatieve manier ontwerpen en realiseren.
+
 <!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
