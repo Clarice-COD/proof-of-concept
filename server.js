@@ -30,6 +30,7 @@ app.get('/', async (req, res) => {
   });
 
   const data = await qersResponse.json();
+  console.log(data);
 
   // Ik ga de data ophalen voor de chatberichten
   const response = await fetch('https://fdnd.directus.app/items/messages?filter[from][_eq]=148&sort=-created');
