@@ -11,20 +11,7 @@ Ontwerp en maak een data driven online concept voor een opdrachtgever.
 
 <img height="400" alt="image" src="https://github.com/user-attachments/assets/807c273f-8afd-42a6-9939-5239c2dab7ce"/>
 
-
-
-
-
-## Inhoudsopgave
-
-  * [Beschrijving](#beschrijving)
-  * [Gebruik](#gebruik)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
-
-## Beschrijving
+## Inleiding
 
 ### Over het bedrijf Q42
 Q42 is een technisch creatief bureau met een kantoor in Den Haag en Amsterdam, die deel uitmaakt van het moederbedrijf Eidra. Eidra bestaat uit ongeveer 1.200 leden en Q42 uit iets meer dan 100. De bedrijfsnaam ‘Q42’ komt van het boek “The Hitchhiker’s Guide to the Galaxy”, waarin ‘42’ het antwoord is op de ultieme vraag over het leven, het universum en alles.
@@ -36,6 +23,17 @@ De pagina is momenteel vrij statisch, waardoor de bezoekers snel verder klikken 
 
 ### Oplossing voor Q42
 Q42 wil op een trotse en speelse manier laten zien wie er bij het bedrijf werken. Daarom mogen wij de ‘mensen’-pagina op een eigen, creatieve manier ontwerpen en realiseren.
+
+## Inhoudsopgave
+
+  * [Beschrijving](#beschrijving)
+  * [Gebruik](#gebruik)
+  * [Kenmerken](#kenmerken)
+  * [Installatie](#installatie)
+  * [Bronnen](#bronnen)
+  * [Licentie](#licentie)
+
+## Beschrijving
 
 ### Wat ik heb gedaan in het kort
 De portretfoto's van Q42 heb ik in een horizontale scroll gezet. Daarnaast heb ik een filter gemaakt die filtert op de profielfoto's, afhankelijk van de eigenschappen van de mensen van Q42. Ook heb ik een chat gemaakt waar bezoekers hun vragen kunnen delen. Deze website werkt responsive en is gedeeltelijk progressive enhanced. 
@@ -75,8 +73,28 @@ Ik heb een openbare chat gemaakt voor op de web pagina 'mensen'. Hier kunnen geb
 
 https://github.com/user-attachments/assets/62ee3602-4cda-4ba1-9122-7e8a540cad2a
 
+## huisstijl
 
+Q42 heeft de ruimte gegeven om aanpassingen in de huisstijl te maken.
 
+### Kleurgebruik
+Hieronder staan de kleuren van Q42
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/22658b0a-1cd0-46c2-8a4a-411a028ca90b" />
+
+Ik heb de tekst een andere kleur gegeven. Ik heb dit gedaan om meer speling en diepte te krijgen tussen de titel en de bijbehorende tekst. Ik heb voor deze kleur gekozen omdat het een mix is van de witte en donkergroene kleur is die al in de huisstijl hoort. Ik heb hem licht gemaakt zodat er veel constrast is in vergelijking met de achtergrond. 
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/94ccd19b-09d3-4864-bbd7-490dbe23cca3" />
+
+Ook heb ik de kleur van de tekst in de button aangepast. Ik vond de knop laag cintrast ogen dus ik heb een color contrast test gedaan en hier knam een lage scoren uit. Ik keek of een andere kleur in hun huisstijl wel zorgde voor voldoende contrast. Vandaar dat de tekst in de knoppen nu donker zijn. 
+
+huidige knop:
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/d936041f-5024-465c-93b1-1af1239fc9a0" />
+
+Aangepaste knop:
+
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/ee10a1fd-9676-4fca-8aeb-22b00de63f20" />
 
 
 <!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
