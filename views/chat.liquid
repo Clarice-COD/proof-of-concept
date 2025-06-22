@@ -49,11 +49,6 @@
     // Verzamel alle formuliervelden van het formulier
     let formData = new FormData(form)
 
-    // Voeg name en value toe aan de submit button indien meerdere submit buttons
-    if (event.submitter) {
-      formData.append(event.submitter.name, event.submitter.value)
-    }
-
     // Doe een fetch naar de server, net als hoe de browser dit normaal zou doen
     // Gebruik daarvoor het action en method attribuut van het originele formulier
     // Inclusief alle formuliervelden
@@ -65,7 +60,6 @@
     // De server redirect op de normale manier, en geeft HTML terug
     // (De server weet niet eens dat deze fetch via client-side JavaScript gebeurde)
     const responseText = await response.text()
-    console.log('Response HTML:', responseText)
 
     // Normaal zou de browser die HTML parsen en weergeven, maar daar moeten we nu zelf iets mee
     // Parse de nieuwe HTML en maak hiervan een nieuw Document Object Model in het geheugen
