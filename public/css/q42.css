@@ -85,10 +85,6 @@ h1, h2, h3 {
       }
 }
 
-caption {
-    font-family: var(--font-family-heading);
-}
-
 h1 {
     font-size: var(--heading-size-h1);
     text-align: var(--text-align);
@@ -104,6 +100,11 @@ h2 {
 h3 {
     font-size: var(--heading-size-h3);
     margin: 0;
+    width: 13rem;
+
+    @media (min-width: 770px) {
+        width: 17rem;
+      }
 
 }
 
@@ -127,6 +128,10 @@ p {
 
 label {
     color: var(--secondary-text-color);
+}
+
+caption {
+    font-family: var(--font-family-heading);
 }
 
 summary {
@@ -574,14 +579,6 @@ section:not(#section-img-scroll, #chatSection) {
     justify-content: center;
     margin: auto;
     gap: var(--gap-m);
-}
-
-h3 {
-    width: 13rem;
-
-    @media (min-width: 770px) {
-        width: 17rem;
-      }
 }
 
 .opslaan-btn {
