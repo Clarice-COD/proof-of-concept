@@ -442,10 +442,11 @@ time {
     padding: 0;
     overflow:hidden;
     font-size: 0;
-    animation: loader 1.25s infinite;
+    animation: loader 1.25s infinite; /* oneindigende animatie */
     border-radius: var(--border-radius-s);
 }
 
+/* roteerd de submit knop */
 @keyframes loader {
         0% {
         rotate: 0deg;

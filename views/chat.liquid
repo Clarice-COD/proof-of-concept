@@ -43,7 +43,8 @@
     // Overschrijft de default Loading state van de browser...
     event.preventDefault()
 
-    document.getElementById('submitBtn').classList.add('loader');
+    // loading state
+    document.getElementById('submitBtn').classList.add('loader'); // voegt de class loader aan de submit knop toe, waar een infinite rotate op zit 
 
     // Verzamel alle formuliervelden van het formulier
     let formData = new FormData(form)
@@ -77,11 +78,11 @@
     form.outerHTML = newForm.outerHTML;
   
     // success state
-    const btn = document.getElementById("submitBtn");
+    const btn = document.getElementById("submitBtn"); // selecteerd de button waarop ik wil animeren
     const textVerstuur = btn.textContent;
 
-    btn.classList.remove("loader")
-    btn.textContent = "✔ Gelukt";
+    btn.classList.remove("loader") // verweiderd de class met animatie loading state
+    btn.textContent = "✔ Gelukt"; // past textuele inhoudt aan naar gelukt
 
     setTimeout(() => {
         btn.textContent = textVerstuur;
