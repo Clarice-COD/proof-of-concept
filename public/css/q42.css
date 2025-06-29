@@ -1,11 +1,13 @@
 @font-face {
     font-family: "proxima-nova";
     src: url('/fonts');
+    font-display: swap;
   }
 
   @font-face {
     font-family: "ff-tisa-sans-web-pro";
     src: url('/ff-tisa-sans-web-pro');
+    font-display: swap;
   }
 
 :root {
