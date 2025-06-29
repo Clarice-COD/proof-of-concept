@@ -1,14 +1,50 @@
 @font-face {
     font-family: "proxima-nova";
-    src: url('/fonts');
+    src: url('/fonts/proxima-nova-300.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
     font-display: swap;
-  }
+}
 
-  @font-face {
-    font-family: "ff-tisa-sans-web-pro";
-    src: url('/ff-tisa-sans-web-pro');
+@font-face {
+    font-family: "proxima-nova";
+    src: url('/fonts/proxima-nova-900.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
     font-display: swap;
-  }
+}
+
+@font-face {
+    font-family: "FF Tisa Sans Web Pro";
+    src: url('/fonts/tisa-sans-web-pro-300.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FF Tisa Sans Web Pro";
+    src: url('/fonts/tisa-sans-web-pro-400-italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FF Tisa Sans Web Pro";
+    src: url('/fonts/tisa-sans-web-pro-400.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FF Tisa Sans Web Pro";
+    src: url('/fonts/tisa-sans-web-pro-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
     /* Tekstkleuren */
