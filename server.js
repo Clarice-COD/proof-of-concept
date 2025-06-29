@@ -4,12 +4,14 @@ import express from 'express' // Externe bibliotheek
 import { Liquid } from 'liquidjs'; // Importeerd liquid uit de bibliotheek
 import 'dotenv/config' // Importeerd dotenv uit de bibliotheek, dotevn zorgt ervoor dat je de variabelen uit het env bestand lokaal kunt lezen
 import fetch from 'node-fetch';
+import compression from 'compression';
 
 console.log(process.env.API_KEY)
 
 const app = express() // Express zorgt voor een aanroep voor het starten van een nieuwe webserver, zodat je door middel van app een route kan aanmaken
 app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
+app.use(compression());
 
 const engine = new Liquid()
 app.engine('liquid', engine.express()); 
