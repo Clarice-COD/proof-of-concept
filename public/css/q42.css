@@ -259,8 +259,8 @@ button, a, label, input, textarea {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-top: solid var(--secondary-backgound-color);
-    border-bottom: solid var(--secondary-backgound-color);
+    border-top: solid var(--secondary-bg-color);
+    border-bottom: solid var(--secondary-bg-color);
     padding: var(--spacing-s);
     align-items: center;
     margin-right: 1rem;
@@ -323,7 +323,7 @@ form {
     flex-direction: column;
     justify-self: center;
     gap: var(--gap-m);
-    background-color: var(--secondary-backgound-color);
+    background-color: var(--secondary-bg-color);
     width: 75vw;
     padding: var(--spacing-m);
     border-radius: var(--border-radius-s);
@@ -361,7 +361,7 @@ textarea {
     display: flex;
     flex-direction: row;
     position: relative;
-    background-color: var(--secondary-backgound-color);
+    background-color: var(--secondary-bg-color);
     width: 75vw;
     padding: var(--spacing-s) var(--spacing-m) var(--spacing-s) var(--spacing-m);
     gap: var(--gap-m);
@@ -418,7 +418,7 @@ time {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: var(--secondary-backgound-color);
+    background-color: var(--secondary-bg-color);
     gap: var(--spacing-m);
 }
 
@@ -522,7 +522,7 @@ section:not(#section-img-scroll, #chatSection) {
     overflow: scroll;
     display: flex;
     left: 0;
-    background: var(--secondary-backgound-color);
+    background: var(--secondary-bg-color);
     gap: var(--gap-m);
     padding-left: var(--spacing-m);
 
@@ -595,7 +595,7 @@ section:not(#section-img-scroll, #chatSection) {
 .no-images-found-container {
     width: 100vw;
     height: 75vw;
-    background-color: var(--secondary-backgound-color);
+    background-color: var(--secondary-bg-color);
     display: flex;
     flex-direction: column;
     align-items: center;
