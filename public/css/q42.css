@@ -108,6 +108,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-size-adjust: 0.5;
 }
 
   /* Typografie */
