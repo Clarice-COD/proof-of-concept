@@ -176,6 +176,8 @@ caption {
 summary {
     color: var(--secondary-text-color);
     font-size: var(--text-size-s);
+    min-width: 48px;
+    min-height:48px;
 }
 
 a {

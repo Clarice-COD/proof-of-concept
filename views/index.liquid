@@ -29,7 +29,6 @@
         <ul class="people-container">
             {% for qer in qers %}
             <li class="person">
-                
                 <picture> {% comment %} Geeft van 1 afbeelding meerdere formaten mee zodat de browsers kunnen kiezen {% endcomment %}
                     <source type="image/avif" srcset="{{ qer.avatars | first }}"> {% comment %} Als de browser AVIF ondersteund, wordt deze afbeelding gebruikt  {% endcomment %}
                     <source type="image/webp" srcset="{{ qer.avatars | first }}"> {% comment %} Als de browser webp ondersteund, wordt deze afbeelding gebruikt  {% endcomment %}
