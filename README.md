@@ -73,7 +73,7 @@ Ik heb een openbare chat gemaakt voor op de web pagina 'mensen'. Hier kunnen geb
 
 https://github.com/user-attachments/assets/62ee3602-4cda-4ba1-9122-7e8a540cad2a
 
-## huisstijl
+### huisstijl
 
 Q42 heeft de ruimte gegeven om aanpassingen in de huisstijl te maken.
 
@@ -95,6 +95,29 @@ huidige knop:
 Aangepaste knop:
 
 <img width="150" alt="image" src="https://github.com/user-attachments/assets/ee10a1fd-9676-4fca-8aeb-22b00de63f20" />
+
+### Responsive
+
+Ik ben vanuit mobiele first begonnen en heb met media queries de website ook bruikbaar gemaakt voor tablet en desktop. 
+
+Mobiel:
+
+<img height="400" alt="image" src="https://github.com/user-attachments/assets/86975674-9875-49ba-ad95-005d1807b195" />
+
+Desktop:
+
+<img height="400" alt="image" src="https://github.com/user-attachments/assets/ff5edafc-27c2-4d94-9d3e-e66e4cd1e46f" />
+
+Voor het menu heb dezelfde code gebruikt voor op mobiel en desktop. Ik had deze keuze gemaakt omdat ik niet met overbodige code wilde werken als het ook zonder kan. In dit geval was het voor de toegankelijkheid toch beter geweest als ik 2 apparte menu's had gemaakt omdat ze zo verschillend zijn en ik nu de navigatie moest opsplitsen in 2 losse list items. 
+
+Mobielle navigatie:
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/9818527e-1f8d-4a57-a5c8-e4ad170cc189" />
+
+Desktop navigatie:
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/14b01a2c-0484-434c-bca4-3c55fe6261a3" />
+
 
 
 <!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
