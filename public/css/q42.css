@@ -48,24 +48,24 @@
 
 :root {
     /* Tekstkleuren */
-  --heading-color: #eeeeee;
+  --title-color: #eeeeee;
   --primary-text-color: #aaaea2;
   --secondary-text-color: #fff;
 
     /* Achtergrondkleuren */
-  --primary-background-color: #212121;
-  --secondary-backgound-color: #41453b;
+  --primary-bg-color: #212121;
+  --secondary-bg-color: #41453b;
 
     /* Highlightkleuren */
   --color-highlight: #84bc2d;
 
   /* Typografie */
-  --font-family-heading: 'proxima-nova', sans-serif;
+  --font-family-title: 'proxima-nova', sans-serif;
   --font-family-text: 'ff-tisa-sans-web-pro', sans-serif;
 
-  --heading-size-h1: 2.8rem;
-  --heading-size-h2: 2rem;
-  --heading-size-h3: 1.4rem;
+  --title-size-h1: 2.8rem;
+  --title-size-h2: 2rem;
+  --title-size-h3: 1.4rem;
   --text-size-l: 1.6rem;
   --text-size-m: 1.3rem;
   --text-size-s: 1rem;
@@ -95,16 +95,16 @@
   --border-btn: none;
 
   @media (min-width: 770px) {
-    --heading-size-h1: 4rem;
-    --heading-size-h2: 2.6rem;
-    --heading-size-h3: 1.8rem;
+    --title-size-h1: 4rem;
+    --title-size-h2: 2.6rem;
+    --title-size-h3: 1.8rem;
     --text-size-s: 1.2rem;
   }
 }
 
 /* MAIN SETTINGS */
 body {
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-bg-color);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -116,8 +116,8 @@ body {
 h1, h2, h3 {
     line-height: var(--line-height-base);
     max-width: 16rem;
-    color: var(--heading-color);
-    font-family: var(--font-family-heading);
+    color: var(--title-color);
+    font-family: var(--font-family-title);
 
     @media (min-width: 770px) {
         max-width: 25rem;
@@ -125,19 +125,19 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: var(--heading-size-h1);
+    font-size: var(--title-size-h1);
     text-align: var(--text-align);
     margin: auto;
 }
 
 h2 {
-    font-size: var(--heading-size-h2);
+    font-size: var(--title-size-h2);
     text-align: var(--text-align);
     margin: auto;
 }
 
 h3 {
-    font-size: var(--heading-size-h3);
+    font-size: var(--title-size-h3);
     margin: 0;
     width: 13rem;
 
@@ -170,7 +170,7 @@ label {
 }
 
 caption {
-    font-family: var(--font-family-heading);
+    font-family: var(--font-family-title);
 }
 
 summary {
@@ -209,7 +209,7 @@ button, a, label, input, textarea {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-bg-color);
     border: 3px solid #84bc2d;
     border-radius: var(--border-radius-s);
 
@@ -338,7 +338,7 @@ textarea {
     box-sizing: border-box;
     width: 100%;
     border-radius: var(--border-radius-s);
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-bg-color);
     border: solid var(--color-highlight);
     color: var(--color-highlight);
 }
@@ -379,7 +379,7 @@ textarea {
 }
 
 .user-icon {
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-bg-color);
     padding: var(--spacing-xs);
     border-radius: var(--border-radius-s);
     width: 2.5rem;
@@ -400,7 +400,7 @@ time {
     @media (min-width: 705px) {
         display: block;
         align-self: baseline;
-        background-color: var(--primary-background-color);
+        background-color: var(--primary-bg-color);
         color: var(--color-highlight);
         padding: var(--spacing-xs);
         border-radius: var(--border-radius-s);
@@ -681,7 +681,7 @@ table {
     margin: auto;
     top: 0;
     padding: 0.5rem;
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-bg-color);
     z-index: 1;
 }
 
@@ -719,7 +719,7 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-bg-color);
     height: 100vh;
     width: 100vw;
     top: 0;
@@ -771,7 +771,7 @@ table {
     margin-left: 2rem;
     padding: 10px 20px 10px 20px;
     background-color: var(--color-highlight);
-    color: var(--primary-background-color);
+    color: var(--primary-bg-color);
     border-radius: var(--border-radius-s);
 
     @media (min-width: 770px) {
