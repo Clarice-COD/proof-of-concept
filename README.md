@@ -133,12 +133,14 @@ In dit project werk ik met NodeJS en Express. Ik gebruik Liquid, server.js, css 
 
 Ik heb in dit project met een Key License gewerkt. Om data op te kunnen halen uit de API heb ik een env. bestand aangemaakt om toegang te krijgen tot de informatie uit de database.
 
-
-### Color contrast test
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
 
 ## Installatie
-<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
+
+Important: Voor dit project is het installeren van NodeJS nodig.
+
+Voer eerst `npm install` uit in de Terminal, schrijf daarna `npm start` in de Terminal zodat de server start. Dan kan je de website via http://localhost:8000 op local host bekijken. 
+
 
 ## Bronnen
 
